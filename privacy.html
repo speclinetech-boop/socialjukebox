@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Social Jukebox</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f0c29; }
+        .app-gradient { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
+        .glass-panel { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #c084fc, #6366f1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="app-gradient text-white min-h-screen flex flex-col">
+
+    <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center glass-panel sticky top-0 z-50">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <i class="fa-solid fa-music text-purple-400 text-2xl"></i>
+            <span class="font-bold text-xl tracking-tight">Social Jukebox</span>
+        </a>
+        <div>
+            <a href="support.html" class="text-sm font-semibold text-gray-300 hover:text-white transition">Support</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto max-w-4xl px-6 py-20">
+        <h1 class="text-5xl font-extrabold mb-4 text-gradient">Privacy Policy</h1>
+        <p class="text-gray-400 mb-12">Last Updated: January 18, 2026</p>
+
+        <div class="space-y-12">
+            <div class="glass-panel p-8 rounded-2xl border-l-4 border-teal-400">
+                <h2 class="text-2xl font-bold mb-4">Our Privacy Pledge</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    At <strong>Specline Tech LLC</strong>, we believe your music taste is your business. Social Jukebox is designed to be <strong>Privacy-First</strong>. We do not create user profiles, we do not track your location, and we do not sell your data. Period.
+                </p>
+            </div>
+
+            <section>
+                <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-shield-halved mr-3"></i>Data Collection</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-6 rounded-xl">
+                        <h3 class="font-bold text-teal-400 mb-2">What we DON'T collect:</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Names or Emails</li>
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Phone Numbers</li>
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Precise GPS Location</li>
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Contacts or Photos</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-xl">
+                        <h3 class="font-bold text-purple-400 mb-2">What happens locally:</h3>
+                        <ul class="text-sm text-gray-400 space-y-2">
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Apple Music authentication</li>
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Device-to-device voting</li>
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Temporary session IDs</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-handshake mr-3"></i>Third Party Services</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Social Jukebox utilizes the <strong>Apple Music API</strong> to facilitate music playback. Your interaction with music content is governed by Apple’s Privacy Policy. We do not transmit your music library data to any external servers owned by Specline Tech LLC.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-envelope mr-3"></i>Contact Us</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    If you have questions about this policy, please contact <strong>Specline Tech LLC</strong> at:
+                </p>
+                <a href="mailto:feedback@socialjukebox.app" class="inline-block mt-4 text-teal-400 font-bold hover:underline">feedback@socialjukebox.app</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-10 px-6 border-t border-white/10 bg-black/20 text-center">
+        <div class="flex justify-center gap-6 text-sm text-gray-400 mb-4">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="support.html" class="hover:text-white transition">Support</a>
+            <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+        </div>
+        <p class="text-gray-500 text-sm">A <a href="https://specline.co" class="text-purple-400 hover:text-purple-300 transition">SPECLINE TECH LLC</a> Product</p>
+        <p class="text-gray-600 text-xs mt-2">© 2026 Specline Tech LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
