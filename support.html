@@ -6,10 +6,23 @@
     <title>Support | Social Jukebox</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { background-color: #0f0c29; font-family: 'Inter', sans-serif; }
         .app-gradient { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
         .glass-panel { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient {
+            background: linear-gradient(to right, #c084fc, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
+        }
     </style>
 </head>
 <body class="app-gradient text-white min-h-screen flex flex-col">
@@ -19,26 +32,163 @@
             <i class="fa-solid fa-music text-purple-400 text-2xl"></i>
             <span class="font-bold text-xl tracking-tight">Social Jukebox</span>
         </a>
+        <a href="index.html" class="text-sm text-gray-300 hover:text-white transition">← Back to Home</a>
     </nav>
 
-    <main class="flex-grow container mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-extrabold mb-6">Support & Contact</h1>
-        <div class="glass-panel p-8 rounded-2xl mb-12 text-center">
-            <h2 class="text-2xl font-bold mb-4 text-purple-300">Need a Hand?</h2>
-            <p class="text-gray-300 mb-6">Our AI assistant in the corner can answer most questions instantly. For everything else, reach out to the Specline Tech team.</p>
-            <a href="mailto:feedback@socialjukebox.app" class="text-2xl font-bold text-teal-400 hover:text-teal-300 transition">feedback@socialjukebox.app</a>
+    <main class="flex-grow container mx-auto max-w-4xl px-6 py-12">
+        
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">How Can We Help?</h1>
+            <p class="text-gray-300 text-lg">Get instant answers or reach out to our team</p>
         </div>
+
+        <!-- AI Assistant - Primary CTA -->
+        <div class="glass-panel p-8 md:p-12 rounded-3xl mb-12 text-center pulse-glow">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-purple-500/20 mb-6">
+                <i class="fa-solid fa-robot text-4xl text-purple-400"></i>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gradient">Ask Our AI Assistant</h2>
+            <p class="text-gray-300 mb-6 max-w-xl mx-auto">
+                Get instant answers about how to use Social Jukebox, troubleshooting tips, and more. 
+                Our AI assistant is available 24/7 and can help with most questions.
+            </p>
+            <button 
+                onclick="window.chatbase('open')" 
+                class="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg rounded-full transition shadow-lg shadow-purple-500/30"
+            >
+                <i class="fa-solid fa-message"></i>
+                Chat Now
+            </button>
+            <p class="text-gray-500 text-sm mt-4">
+                <i class="fa-solid fa-circle text-green-400 text-xs mr-2"></i>Available now in the bottom-right corner
+            </p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">How do I start a party?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        Tap "I'm the DJ" on the home screen. You'll get a 4-digit PIN to share with your guests. Add songs using the search feature and tap "Play Next Song" to start the music. Note: Hosting requires DJ Pro ($4.99 one-time purchase).
+                    </div>
+                </details>
+
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">How do I join a party?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        Tap "I'm a Guest" and enter the 4-digit PIN from the DJ. Make sure you're on the same WiFi network as the DJ. Once connected, you can add songs, vote, and send emoji reactions!
+                    </div>
+                </details>
+
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">Do I need Apple Music?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        Yes, both DJs and guests need an active Apple Music subscription to search for songs and play music. Social Jukebox uses Apple Music's full catalog.
+                    </div>
+                </details>
+
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">What are Super Votes?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        Super Votes give a song +5 votes instantly, pushing it toward the top of the queue. Everyone gets 3 free Super Votes per session. Use them on songs you really want to hear!
+                    </div>
+                </details>
+
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">How do I clear the queue?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        There's no way to remove individual songs. To clear the queue and start fresh, the DJ should end the current session and start a new one. Alternatively, you can downvote songs you don't want to hear—they'll move to the bottom.
+                    </div>
+                </details>
+
+                <details class="glass-panel rounded-xl overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold">Why can't I connect to a party?</span>
+                        <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-300">
+                        Make sure you're on the same WiFi network as the DJ and entering the correct 4-digit PIN. If it still doesn't work, ask the DJ to restart their session. Sometimes it takes a few seconds to connect.
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="glass-panel p-8 rounded-2xl mb-12">
+            <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+            <p class="text-gray-300 mb-6">
+                Can't find what you're looking for? Our team is happy to help with any questions, feedback, or issues.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="mailto:hello@specline.co" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition">
+                    <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
+                        <i class="fa-solid fa-envelope text-purple-400"></i>
+                    </div>
+                    <div>
+                        <div class="font-semibold">Email Support</div>
+                        <div class="text-gray-400 text-sm">hello@specline.co</div>
+                    </div>
+                </a>
+                
+                <a href="https://specline.co" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition">
+                    <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
+                        <i class="fa-solid fa-globe text-purple-400"></i>
+                    </div>
+                    <div>
+                        <div class="font-semibold">SPECLINE TECH</div>
+                        <div class="text-gray-400 text-sm">specline.co</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- App Info (for Apple compliance) -->
+        <div class="text-center text-gray-500 text-sm">
+            <p class="mb-2">Social Jukebox Version 1.1</p>
+            <p class="mb-4">Requires iOS 17.0 or later • Apple Music subscription required</p>
+            <p>© 2026 SPECLINE TECH LLC. All rights reserved.</p>
+        </div>
+
     </main>
 
     <footer class="py-10 px-6 border-t border-white/10 bg-black/20 text-center">
-        <div class="flex justify-center gap-6 text-sm text-gray-400">
-            <a href="index.html" class="hover:text-white transition">Home</a>
-            <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
-            <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+        <div class="mb-6">
+            <h3 class="font-bold text-2xl mb-6 text-gradient">Social Jukebox</h3>
+            <div class="flex justify-center flex-wrap gap-6 text-sm text-gray-400 mb-6">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="support.html" class="hover:text-white transition">Support</a>
+                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+                <a href="copyright.html" class="hover:text-white transition">Copyright</a>
+            </div>
+            <p class="text-gray-600 text-xs">© 2026 <a href="https://specline.co" class="hover:text-gray-400 transition">SPECLINE TECH LLC</a>. All rights reserved.</p>
         </div>
-        <p class="mt-4 text-gray-600 text-xs">© 2026 Specline Tech LLC.</p>
     </footer>
 
-    <script> (function(){/* ... existing chatbase code ... */})() </script>
+    <!-- Chatbase AI Assistant -->
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
 </body>
 </html>
