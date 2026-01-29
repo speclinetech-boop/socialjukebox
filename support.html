@@ -11,18 +11,9 @@
         body { background-color: #0f0c29; font-family: 'Inter', sans-serif; }
         .app-gradient { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
         .glass-panel { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .text-gradient {
-            background: linear-gradient(to right, #c084fc, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .pulse-glow {
-            animation: pulse-glow 2s ease-in-out infinite;
-        }
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
-            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
-        }
+        .text-gradient { background: linear-gradient(to right, #c084fc, #6366f1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); } 50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); } }
     </style>
 </head>
 <body class="app-gradient text-white min-h-screen flex flex-col">
@@ -36,7 +27,7 @@
     </nav>
 
     <main class="flex-grow container mx-auto max-w-4xl px-6 py-12">
-        
+
         <!-- Header -->
         <div class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-4">How Can We Help?</h1>
@@ -50,13 +41,9 @@
             </div>
             <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gradient">Ask Our AI Assistant</h2>
             <p class="text-gray-300 mb-6 max-w-xl mx-auto">
-                Get instant answers about how to use Social Jukebox, troubleshooting tips, and more. 
-                Our AI assistant is available 24/7 and can help with most questions.
+                Get instant answers about how to use Social Jukebox, troubleshooting tips, and more. Our AI assistant is available 24/7 and can help with most questions.
             </p>
-            <button 
-                onclick="window.chatbase('open')" 
-                class="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg rounded-full transition shadow-lg shadow-purple-500/30"
-            >
+            <button onclick="window.chatbase('open')" class="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg rounded-full transition shadow-lg shadow-purple-500/30">
                 <i class="fa-solid fa-message"></i>
                 Chat Now
             </button>
@@ -68,7 +55,6 @@
         <!-- FAQ Section -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-            
             <div class="space-y-4">
                 <details class="glass-panel rounded-xl overflow-hidden group">
                     <summary class="p-6 cursor-pointer flex items-center justify-between hover:bg-white/5 transition">
@@ -132,34 +118,21 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
+        <!-- Contact Section - Email only -->
         <div class="glass-panel p-8 rounded-2xl mb-12">
             <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
             <p class="text-gray-300 mb-6">
                 Can't find what you're looking for? Our team is happy to help with any questions, feedback, or issues.
             </p>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <a href="mailto:hello@specline.co" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition">
-                    <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
-                        <i class="fa-solid fa-envelope text-purple-400"></i>
-                    </div>
-                    <div>
-                        <div class="font-semibold">Email Support</div>
-                        <div class="text-gray-400 text-sm">hello@specline.co</div>
-                    </div>
-                </a>
-                
-                <a href="https://specline.co" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition">
-                    <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
-                        <i class="fa-solid fa-globe text-purple-400"></i>
-                    </div>
-                    <div>
-                        <div class="font-semibold">SPECLINE TECH</div>
-                        <div class="text-gray-400 text-sm">specline.co</div>
-                    </div>
-                </a>
-            </div>
+            <a href="mailto:support@socialjukebox.app" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition">
+                <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <i class="fa-solid fa-envelope text-purple-400"></i>
+                </div>
+                <div>
+                    <div class="font-semibold">Email Support</div>
+                    <div class="text-gray-400 text-sm">support@socialjukebox.app</div>
+                </div>
+            </a>
         </div>
 
         <!-- App Info (for Apple compliance) -->
@@ -186,7 +159,7 @@
 
     <!-- Chatbase AI Assistant -->
     <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
 
 </body>
