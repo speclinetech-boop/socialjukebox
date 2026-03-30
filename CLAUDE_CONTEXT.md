@@ -70,9 +70,9 @@ Phil tested DJ Pro purchase on Mac - works perfectly, UI not awkward at all.
 
 ## CURRENT APP VERSION
 
-- **App Store:** 1.1 (live)
-- **TestFlight:** 1.4.1
-- **Xcode project:** 1.4.1
+- **App Store:** 1.7 (live)
+- **TestFlight:** 1.7
+- **Xcode project:** 1.7
 
 ---
 

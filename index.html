@@ -55,6 +55,11 @@
         }
         /* Fix for smooth scrolling */
         html { scroll-behavior: smooth; }
+
+        @media (max-width: 768px) {
+            .animate-blob { display: none; }
+            .floating-mockup { animation: none; }
+        }
         
         /* Origin story background */
         .origin-bg {
@@ -112,6 +117,7 @@
                         Learn More
                     </a>
                 </div>
+                <p class="text-sm text-gray-500 pt-2">Android & Spotify support on the roadmap</p>
             </div>
             
             <div class="flex-1 flex justify-center floating-mockup">
