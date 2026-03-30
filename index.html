@@ -56,6 +56,9 @@
         /* Fix for smooth scrolling */
         html { scroll-behavior: smooth; }
 
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
         @media (max-width: 768px) {
             .animate-blob { display: none; }
             .floating-mockup { animation: none; }
@@ -167,6 +170,23 @@
                     <h3 class="text-xl font-bold mb-3">iPhone, iPad & Mac</h3>
                     <p class="text-gray-400 leading-relaxed">Run the DJ dashboard on your Mac for house parties, or keep it mobile on your phone for road trips. One app, every device.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREENSHOT SHOWCASE -->
+    <section id="showcase" class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">See It in Action</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">From hosting a session to voting on the next banger — here's what the party looks like.</p>
+            </div>
+            <div class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+                <img src="images/screenshot-1-home-web.jpg" alt="Control the Vibe Together" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                <img src="images/screenshot-2-vote-web.jpg" alt="Everyone Gets a Vote" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                <img src="images/screenshot-3-roadtrip-web.jpg" alt="The Ultimate Road Trip" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                <img src="images/screenshot-4-guests-web.jpg" alt="Unlimited Guests, 100% Free" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                <img src="images/screenshot-5-host-web.jpg" alt="Host Your Own Session" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
             </div>
         </div>
     </section>
