@@ -29,7 +29,7 @@
 
     <main class="flex-grow container mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-5xl font-extrabold mb-4 text-gradient">Privacy Policy</h1>
-        <p class="text-gray-400 mb-12">Last Updated: January 18, 2026</p>
+        <p class="text-gray-400 mb-12">Last Updated: May 27, 2026</p>
 
         <div class="space-y-12">
             <div class="glass-panel p-8 rounded-2xl border-l-4 border-teal-400">
@@ -55,6 +55,7 @@
                         <h3 class="font-bold text-purple-400 mb-2">What happens locally:</h3>
                         <ul class="text-sm text-gray-400 space-y-2">
                             <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Apple Music authentication</li>
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Spotify authentication (via Spotify app)</li>
                             <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Device-to-device voting</li>
                             <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Temporary session IDs</li>
                         </ul>
@@ -64,9 +65,13 @@
 
             <section>
                 <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-handshake mr-3"></i>Third Party Services</h2>
-                <p class="text-gray-300 leading-relaxed">
-                    Social Jukebox utilizes the <strong>Apple Music API</strong> to facilitate music playback. Your interaction with music content is governed by Apple’s Privacy Policy. We do not transmit your music library data to any external servers owned by Specline Tech LLC.
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Social Jukebox supports two music services, each governed by their own privacy policy:
                 </p>
+                <ul class="text-gray-300 space-y-3">
+                    <li><strong>Apple Music:</strong> Playback uses Apple’s MusicKit framework. Your interaction with Apple Music content is governed by Apple’s Privacy Policy. We do not transmit your music library data to any Specline Tech LLC servers.</li>
+                    <li><strong>Spotify:</strong> Playback uses the Spotify iOS SDK. Authorization tokens are exchanged through a Specline Tech LLC proxy server (socialjukebox.app) solely to keep the Spotify client secret off your device — no listening history, account data, or personal information is stored. Your use of Spotify is also governed by Spotify’s Privacy Policy.</li>
+                </ul>
             </section>
 
             <section>
@@ -86,7 +91,7 @@
             <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
         </div>
         <p class="text-gray-500 text-sm">A <a href="https://specline.co" class="text-purple-400 hover:text-purple-300 transition">SPECLINE TECH LLC</a> Product</p>
-        <p class="text-gray-600 text-xs mt-2">© 2026 Specline Tech LLC. All rights reserved.</p>
+        <p class="text-gray-600 text-xs mt-2">© 2026 Specline Tech LLC. All rights reserved. Patent Pending.</p>
     </footer>
 
     <script>
