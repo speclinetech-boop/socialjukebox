@@ -222,12 +222,29 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">See It in Action</h2>
                 <p class="text-gray-400 max-w-xl mx-auto">From hosting a session to voting on the next banger — here's what the party looks like.</p>
             </div>
-            <div class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
-                <img src="images/screenshot-1-home-web.jpg" alt="Control the Vibe Together" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
-                <img src="images/screenshot-2-vote-web.jpg" alt="Everyone Gets a Vote" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
-                <img src="images/screenshot-3-roadtrip-web.jpg" alt="The Ultimate Road Trip" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
-                <img src="images/screenshot-4-guests-web.jpg" alt="Unlimited Guests, 100% Free" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
-                <img src="images/screenshot-5-host-web.jpg" alt="Host Your Own Session" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+            <div class="relative">
+                <!-- Left arrow (desktop only) -->
+                <button onclick="scrollCarousel(-1)" class="hidden md:flex absolute -left-6 top-1/2 -translate-y-6 z-10 w-11 h-11 items-center justify-center glass-panel rounded-full hover:bg-white/20 transition" aria-label="Scroll left">
+                    <i class="fa-solid fa-chevron-left text-white text-sm"></i>
+                </button>
+                <!-- Carousel -->
+                <div id="screenshot-carousel" class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+                    <img src="images/screenshot-1-home-web.jpg" alt="Control the Vibe Together" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                    <img src="images/screenshot-2-vote-web.jpg" alt="Everyone Gets a Vote" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                    <img src="images/screenshot-3-roadtrip-web.jpg" alt="The Ultimate Road Trip" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                    <img src="images/screenshot-4-guests-web.jpg" alt="Unlimited Guests, 100% Free" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                    <img src="images/screenshot-5-host-web.jpg" alt="Host Your Own Session" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                    <img src="images/screenshot-6-spotify-web.jpg" alt="Choose Apple Music or Spotify" class="snap-center rounded-2xl shadow-2xl shadow-purple-500/20 flex-shrink-0 w-72 md:w-80" loading="lazy">
+                </div>
+                <!-- Right arrow (desktop only) -->
+                <button onclick="scrollCarousel(1)" class="hidden md:flex absolute -right-6 top-1/2 -translate-y-6 z-10 w-11 h-11 items-center justify-center glass-panel rounded-full hover:bg-white/20 transition" aria-label="Scroll right">
+                    <i class="fa-solid fa-chevron-right text-white text-sm"></i>
+                </button>
+            </div>
+            <!-- Dot indicators (desktop) + swipe hint (mobile) -->
+            <div class="flex justify-center items-center mt-5 gap-4">
+                <p class="text-gray-600 text-xs md:hidden">← Swipe to see more →</p>
+                <div id="carousel-dots" class="hidden md:flex gap-2"></div>
             </div>
         </div>
     </section>
@@ -278,6 +295,37 @@
             <p class="text-gray-600 text-xs">© 2026 <a href="https://specline.co" class="hover:text-gray-400 transition">SPECLINE TECH LLC</a>. All rights reserved. Patent Pending.</p>
         </div>
     </footer>
+
+    <script>
+        // Screenshot carousel — arrow buttons + dot indicators
+        function scrollCarousel(dir) {
+            document.getElementById('screenshot-carousel').scrollBy({ left: dir * 336, behavior: 'smooth' });
+        }
+
+        (function() {
+            const carousel = document.getElementById('screenshot-carousel');
+            const dotsEl   = document.getElementById('carousel-dots');
+            const imgs     = carousel.querySelectorAll('img');
+            const ITEM_W   = 336; // w-80 (320px) + gap-6 (24px) - ~8px rounding
+
+            // Build dots
+            imgs.forEach((_, i) => {
+                const d = document.createElement('button');
+                d.setAttribute('aria-label', 'Go to screenshot ' + (i + 1));
+                d.className = 'h-2 rounded-full transition-all duration-300 ' + (i === 0 ? 'w-5 bg-purple-400' : 'w-2 bg-white/25');
+                d.addEventListener('click', () => carousel.scrollTo({ left: i * ITEM_W, behavior: 'smooth' }));
+                dotsEl.appendChild(d);
+            });
+
+            // Update active dot on scroll
+            carousel.addEventListener('scroll', () => {
+                const active = Math.round(carousel.scrollLeft / ITEM_W);
+                dotsEl.querySelectorAll('button').forEach((d, i) => {
+                    d.className = 'h-2 rounded-full transition-all duration-300 ' + (i === active ? 'w-5 bg-purple-400' : 'w-2 bg-white/25');
+                });
+            }, { passive: true });
+        })();
+    </script>
 
     <script>
         (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
