@@ -134,8 +134,26 @@
                         <span class="font-semibold">Why can't I connect to a party?</span>
                         <i class="fa-solid fa-chevron-down text-purple-400 group-open:rotate-180 transition-transform"></i>
                     </summary>
-                    <div class="px-6 pb-6 text-gray-300">
-                        Make sure you're on the same WiFi network as the DJ and entering the correct 4-digit PIN. If it still doesn't work, ask the DJ to restart their session. Sometimes it takes a few seconds to connect.
+                    <div class="px-6 pb-6 text-gray-300 space-y-4">
+                        <p>The most common causes and fixes:</p>
+                        <ol class="list-decimal list-inside space-y-3 ml-1">
+                            <li>
+                                <strong>Local Network permission is off.</strong> Social Jukebox uses your iPhone's local network to find the DJ — iOS requires you to allow this explicitly. Go to <strong>Settings → Privacy &amp; Security → Local Network</strong> and make sure Social Jukebox is turned on. If it's missing from the list, open the app and try joining a party; iOS will prompt you for permission.
+                            </li>
+                            <li>
+                                <strong>You're on a different WiFi network than the DJ.</strong> Both devices must be on the exact same WiFi network — not one on the 5 GHz band and another on the 2.4 GHz band if your router names them separately, and not one on WiFi and another on cellular.
+                            </li>
+                            <li>
+                                <strong>Wrong or mistyped PIN.</strong> Ask the DJ to confirm the 4-digit code shown on their screen and re-enter it carefully.
+                            </li>
+                            <li>
+                                <strong>Router has client isolation enabled.</strong> Some routers (especially in hotels, schools, or offices) block devices from talking to each other even on the same network. Try a personal hotspot or a home WiFi network instead.
+                            </li>
+                            <li>
+                                <strong>The session timed out.</strong> Ask the DJ to end and restart their session, then try joining again.
+                            </li>
+                        </ol>
+                        <p class="text-gray-400 text-sm mt-2">Social Jukebox requires iOS 17.0 or later. iPhone SE (1st generation) is not supported.</p>
                     </div>
                 </details>
             </div>
