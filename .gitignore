@@ -20,3 +20,4 @@ Thumbs.db
 # Legacy GoDaddy files
 cgi-bin/
 *.shtml
+.vercel
