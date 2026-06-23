@@ -32,6 +32,41 @@ Text("Ask the DJ for the 4-digit code")
 ```
 **Why:** Phil's 68-year-old cousin couldn't figure out that he needed a PIN from someone hosting a party. Users don't understand they need a DJ to give them the code.
 
+### 2. Local Network Permission Warning (HIGH PRIORITY)
+**Issue:** iPhone SE users (and others) cannot connect because iOS silently blocks Multipeer Connectivity when Local Network permission is denied. The app gives no feedback — the guest just sees a spinner or nothing.
+
+**Root cause:** iOS 14+ requires explicit Local Network permission for Multipeer Connectivity / NWBrowser. If the user denied the prompt or it never appeared, device discovery silently fails.
+
+**Recommended fix (two parts):**
+
+**Part A — Detect and surface a permission warning:**
+When the guest taps "Join" and peer discovery hasn't found the DJ after ~5 seconds, check Local Network permission status and show an alert:
+```swift
+// After ~5s with no peers found, show:
+Alert(
+    title: Text("Can't Find the Party"),
+    message: Text("Social Jukebox needs Local Network access to find the DJ. Go to Settings → Privacy & Security → Local Network and turn on Social Jukebox."),
+    primaryButton: .default(Text("Open Settings")) {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+    },
+    secondaryButton: .cancel(Text("Not Now"))
+)
+```
+
+**Part B — Info.plist (verify these keys are present):**
+```xml
+<key>NSLocalNetworkUsageDescription</key>
+<string>Social Jukebox uses your local network to connect guests to the DJ's session.</string>
+<key>NSBonjourServices</key>
+<array>
+    <string>_socialjukebox._tcp</string>
+    <string>_socialjukebox._udp</string>
+</array>
+```
+(Replace `_socialjukebox` with whatever Bonjour service type string your MCSession or NWBrowser uses.)
+
+**Why this matters:** This is the #1 cause of connection failure reported by iPhone SE users and anyone who denied the permission dialog on first launch. The app currently gives no indication that the problem is a permissions issue, so users blame the DJ or the app and give up.
+
 ---
 
 ## RECENT WEBSITE CHANGES (January 30, 2026)
@@ -70,9 +105,9 @@ Phil tested DJ Pro purchase on Mac - works perfectly, UI not awkward at all.
 
 ## CURRENT APP VERSION
 
-- **App Store:** 1.7 (live)
-- **TestFlight:** 1.7
-- **Xcode project:** 1.7
+- **App Store:** 3.0 (submitted, pending review)
+- **TestFlight:** 3.0
+- **Xcode project:** 3.0
 
 ---
 
