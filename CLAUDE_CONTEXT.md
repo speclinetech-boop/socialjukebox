@@ -1,6 +1,6 @@
 # CLAUDE_CONTEXT.md
 # Shared Context for Claude Assistants
-# Last Updated: January 30, 2026
+# Last Updated: July 21, 2026
 
 This document helps keep Desktop Claude (claude.ai) and Xcode Claude in sync. Update this file when making decisions that affect both website and app development.
 
@@ -11,9 +11,9 @@ This document helps keep Desktop Claude (claude.ai) and Xcode Claude in sync. Up
 **App:** Social Jukebox
 **Company:** SPECLINE TECH LLC (named after kids: Spencer, Claire, Liam, Neyden)
 **Developer:** Phil Calzadilla
-**Status:** LIVE on App Store as of January 2026
+**Status:** LIVE on App Store
 
-**What it does:** Democratic DJ app - one person hosts music (DJ), others join via PIN and vote on songs. Best songs rise to the top. Works with Apple Music.
+**What it does:** Democratic DJ app — one person hosts music (DJ), others join via PIN and vote on songs. Best songs rise to the top. Works with **Apple Music or Spotify**.
 
 **Origin Story:** Born on the beach in Aruba, 2025. The idea came from watching one person struggle to DJ while everyone complained about song choices. "Music should be a conversation, not a monologue."
 
@@ -67,16 +67,18 @@ Alert(
 
 **Why this matters:** This is the #1 cause of connection failure reported by iPhone SE users and anyone who denied the permission dialog on first launch. The app currently gives no indication that the problem is a permissions issue, so users blame the DJ or the app and give up.
 
+### 3. Spotify proxy API key (WEBSITE + APP — July 21, 2026)
+**Website:** Rate limits + redirect allowlist are live. Enforcement activates when Vercel `SPOTIFY_PROXY_API_KEY` is set.
+**iOS:** `SpotifyAuthManager.proxyAPIKey` must match that env var. Sent as `X-Api-Key` on JSON proxy calls and as `?key=` on SPTAppRemote `tokenSwapURL` / `tokenRefreshURL`.
+**Rollout:** Ship iOS with the key first, then set the Vercel env var (soft → hard). Do not enable the env var before the App Store build that sends the key is in users' hands (or TestFlight-only if you accept breaking older builds).
+
 ---
 
-## RECENT WEBSITE CHANGES (January 30, 2026)
+## RECENT WEBSITE CHANGES (July 21, 2026)
 
-1. **Added "Born on the Beach" origin story section** with actual photo from Aruba trip
-2. **Updated download button:** "Download for iOS" → "Download for iPhone, iPad & Mac"
-3. **Added 4th feature card:** "iPhone, iPad & Mac" - app works on Apple Silicon Macs!
-4. **Updated subheading:** Added "office parties" to the list of use cases
-5. **Fixed grid layout:** Changed from 3-column to 4-column grid for feature cards
-6. **Fixed year:** Origin story says "Aruba, 2025" (not 2024)
+1. Hardened `/api/spotify/token` and `/refresh` (rate limits, redirect allowlist, optional API key, SDK form-body support)
+2. Aligned privacy / copyright copy with Vercel Analytics, Chatbase, and the Spotify proxy
+3. Refreshed README (App Store live, `api/` documented, env vars)
 
 ---
 
@@ -84,22 +86,21 @@ Alert(
 
 The app runs on:
 - ✅ iPhone
-- ✅ iPad  
-- ✅ Mac (Apple Silicon) - discovered Jan 30, works great without any extra work!
-
-Phil tested DJ Pro purchase on Mac - works perfectly, UI not awkward at all.
+- ✅ iPad
+- ✅ Mac (Apple Silicon)
 
 ---
 
 ## KEY FEATURES
 
-- **DJ Pro** ($1.99 in-app purchase) - unlocks hosting
-- **Guest mode** - free, join via 4-digit PIN
-- **Democratic voting** - upvote/downvote songs
-- **VIP Super Votes** - boost songs to top
-- **Background audio** - music keeps playing when app backgrounded
-- **Session persistence** - can resume interrupted DJ sessions
-- **Multipeer Connectivity** - works without internet, just WiFi
+- **DJ Pro** ($1.99 in-app purchase) — unlocks hosting
+- **Guest mode** — free, join via 4-digit PIN
+- **Democratic voting** — upvote/downvote songs
+- **VIP Super Votes** — boost songs to top
+- **Background audio** — music keeps playing when app backgrounded
+- **Session persistence** — can resume interrupted DJ sessions
+- **Multipeer Connectivity** — works without internet, just WiFi
+- **Apple Music + Spotify** — DJ picks a service; guests search/vote accordingly
 
 ---
 
@@ -127,17 +128,10 @@ Phil tested DJ Pro purchase on Mac - works perfectly, UI not awkward at all.
 
 **Xcode Claude:** Check this file at the start of sessions for pending code changes. Update the "PENDING CODE CHANGES" section when completing tasks.
 
-**Phil:** Commit this file to the iOS repo so Xcode Claude can see it:
-```bash
-git add CLAUDE_CONTEXT.md
-git commit -m "Add shared context doc for Claude assistants"
-git push
-```
-
 ---
 
 ## NOTES
 
 - Desktop Claude and Xcode Claude don't share memory (yet)
-- Feature request submitted to Anthropic to fix this
 - This document is our workaround until they build unified context
+- Party session state is local-only; the only Specline server involvement for the app is the Spotify token proxy on socialjukebox.app

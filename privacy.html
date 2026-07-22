@@ -39,13 +39,13 @@
 
     <main class="flex-grow container mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-5xl font-extrabold mb-4 text-gradient">Privacy Policy</h1>
-        <p class="text-gray-400 mb-12">Last Updated: May 27, 2026</p>
+        <p class="text-gray-400 mb-12">Last Updated: July 21, 2026</p>
 
         <div class="space-y-12">
             <div class="glass-panel p-8 rounded-2xl border-l-4 border-teal-400">
                 <h2 class="text-2xl font-bold mb-4">Our Privacy Pledge</h2>
                 <p class="text-gray-300 leading-relaxed">
-                    At <strong>Specline Tech LLC</strong>, we believe your music taste is your business. Social Jukebox is designed to be <strong>Privacy-First</strong>. We do not create user profiles, we do not track your location, and we do not sell your data. Period.
+                    At <strong>Specline Tech LLC</strong>, we believe your music taste is your business. Social Jukebox is designed to be <strong>Privacy-First</strong>. We do not create user accounts, we do not track your location, and we do not sell your data. Period.
                 </p>
             </div>
 
@@ -55,10 +55,11 @@
                     <div class="bg-white/5 p-6 rounded-xl">
                         <h3 class="font-bold text-teal-400 mb-2">What we DON'T collect:</h3>
                         <ul class="text-sm text-gray-400 space-y-2">
-                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Names or Emails</li>
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Names or Emails (for app accounts)</li>
                             <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Phone Numbers</li>
                             <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Precise GPS Location</li>
                             <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Contacts or Photos</li>
+                            <li><i class="fa-solid fa-xmark mr-2 text-red-500"></i> Listening history or music libraries on our servers</li>
                         </ul>
                     </div>
                     <div class="bg-white/5 p-6 rounded-xl">
@@ -66,21 +67,33 @@
                         <ul class="text-sm text-gray-400 space-y-2">
                             <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Apple Music authentication</li>
                             <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Spotify authentication (via Spotify app)</li>
-                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Device-to-device voting</li>
-                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Temporary session IDs</li>
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Device-to-device voting over your local network</li>
+                            <li><i class="fa-solid fa-check mr-2 text-green-500"></i> Temporary session IDs on your devices</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <section>
+                <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-wifi mr-3"></i>Local Sessions vs. Our Website</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Party sessions (queues, votes, and guest connections) run on your devices over the local network. They are not stored on Specline Tech LLC servers.
+                </p>
+                <p class="text-gray-300 leading-relaxed">
+                    Separately, this website and a small Spotify token proxy are hosted on our infrastructure so the app can keep Spotify’s client secret off your device and so we can publish support and legal pages.
+                </p>
+            </section>
+
+            <section>
                 <h2 class="text-2xl font-bold text-purple-300 mb-4"><i class="fa-solid fa-handshake mr-3"></i>Third Party Services</h2>
                 <p class="text-gray-300 leading-relaxed mb-4">
-                    Social Jukebox supports two music services, each governed by their own privacy policy:
+                    Social Jukebox and this website use the following third parties:
                 </p>
                 <ul class="text-gray-300 space-y-3">
                     <li><strong>Apple Music:</strong> Playback uses Apple’s MusicKit framework. Your interaction with Apple Music content is governed by Apple’s Privacy Policy. We do not transmit your music library data to any Specline Tech LLC servers.</li>
-                    <li><strong>Spotify:</strong> Playback uses the Spotify iOS SDK. Authorization tokens are exchanged through a Specline Tech LLC proxy server (socialjukebox.app) solely to keep the Spotify client secret off your device — no listening history, account data, or personal information is stored. Your use of Spotify is also governed by Spotify’s Privacy Policy.</li>
+                    <li><strong>Spotify:</strong> Playback uses the Spotify iOS SDK. Authorization tokens are exchanged through a Specline Tech LLC proxy on socialjukebox.app solely to keep the Spotify client secret off your device — we do not store listening history, account data, or personal information from that exchange. Your use of Spotify is also governed by Spotify’s Privacy Policy.</li>
+                    <li><strong>Vercel Analytics &amp; Speed Insights:</strong> Our website uses Vercel’s privacy-oriented analytics to understand aggregate traffic and performance. These tools are designed to avoid invasive cross-site tracking; see Vercel’s documentation for details.</li>
+                    <li><strong>Chatbase:</strong> Our support pages may load a Chatbase assistant widget to answer product questions. Messages you send in that chat are processed by Chatbase under their privacy policy so we can provide support.</li>
                 </ul>
             </section>
 
@@ -89,7 +102,7 @@
                 <p class="text-gray-300 leading-relaxed">
                     If you have questions about this policy, please contact <strong>Specline Tech LLC</strong> at:
                 </p>
-                <a href="mailto:feedback@socialjukebox.app" class="inline-block mt-4 text-teal-400 font-bold hover:underline">feedback@socialjukebox.app</a>
+                <a href="mailto:support@socialjukebox.app" class="inline-block mt-4 text-teal-400 font-bold hover:underline">support@socialjukebox.app</a>
             </section>
         </div>
     </main>
