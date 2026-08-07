@@ -22,3 +22,7 @@ cgi-bin/
 *.shtml
 .vercel
 .env*
+
+# Local reference assets — keep off GitHub
+Social Jukebox - Support Knowledge Base.pdf
+images/IMG_5499.PNG
