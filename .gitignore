@@ -21,3 +21,4 @@ Thumbs.db
 cgi-bin/
 *.shtml
 .vercel
+.env*
