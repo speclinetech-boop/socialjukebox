@@ -1,86 +1,198 @@
 Social Jukebox — Seed posts (copy/paste)
 Updated: 2026-08-21
-Post these to real communities this week. Link the use-case URL, not the homepage.
+
+OWNED CHANNELS
+- Instagram: https://www.instagram.com/socialjukeboxapp/
+- X / Twitter: none (skip for now)
+
+════════════════════════════════════════
+REDDIT — DO IT CORRECTLY
+════════════════════════════════════════
+
+RULES (read before posting)
+1. Do NOT drop cold ads in r/roadtrip, r/travel, r/camping, r/partyplanning,
+   r/college, etc. Those subs ban self-promo. You’ll get removed and your
+   account flagged.
+2. Post product showcases only in subs that allow maker posts (below).
+3. Disclose: “I built this.” Never pretend to be a random user recommending it.
+4. One promo post per sub, then wait. Don’t cross-post the same text everywhere
+   the same day.
+5. Reddit’s soft guideline: most of your account activity should be normal
+   comments, not links to your site (~1 in 10 max self-promo).
+6. Before your first promo: verify email on Reddit, comment helpfully in the
+   target sub a few times so filters don’t auto-remove you.
+7. After you post: reply to every comment for 1–2 hours. Post-and-ghost dies.
+
+WHERE TO POST (allowed)
+- r/SideProject     → story / “I built…” (best first post)
+- r/iosapps         → ABC format, often only in monthly App Shelf megathread
+                      unless you meet their Trust/Transparency rules
+- r/IndieApps       → if still active; check sidebar rules that day
+- Helpful replies   → only when someone asks how to share aux / party playlist
+                      (use COMMENT TEMPLATES below; disclose you’re the maker)
+
+WHERE NOT TO POST (cold promo)
+- r/roadtrip, r/travel, r/camping, r/CarAV
+- r/partyplanning, r/college, r/Apartmentliving
+- r/apple, r/spotify, r/AppleMusic (unless a thread explicitly asks for apps)
+
+POSTING ORDER (this week)
+Day 1: r/SideProject (POST A)
+Day 2–3: Comment normally in r/iosapps (earn local karma if needed)
+Day 3–4: r/iosapps App Shelf megathread (POST B) — search “App Shelf”
+Anytime: use COMMENT TEMPLATES when a relevant question appears
 
 ────────────────────────────────────────
-1) ROAD TRIP — Reddit / FB travel groups / Discord
+POST A — r/SideProject
 ────────────────────────────────────────
-Subject/title: End aux fights on road trips — everyone votes on the playlist
+Title:
+I built a democratic DJ after I spent a beach day making all my friends hate the playlist
+
+Body (copy everything below this line):
+
+I’m the maker — disclosure up front.
+
+Aruba, 2025. I had the speaker. Friends and family around me. Every time I changed a song, someone rolled their eyes or asked for the aux. I was trying to keep everyone happy and somehow made nobody happy. That was the moment it clicked: music at a gathering shouldn’t be one person guessing — it should be a conversation.
+
+So I built **Social Jukebox** (iPhone / iPad / Mac):
+
+- One person hosts (Apple Music *or* Spotify) — that can still be me
+- Friends join with a 4-digit PIN — **they don’t need a music subscription**
+- Everyone adds songs and votes; the queue reorders itself
+- Same Wi‑Fi (local/peer connection — no account required to join)
+- Hosting is a **$1.99 one-time** unlock (DJ Pro). Joining is free.
+
+What’s been surprisingly hard isn’t the music APIs — it’s iOS Local Network permission. If a guest taps Don’t Allow, discovery fails silently and they blame the app (or me). I wrote a short host checklist for that because it became our #1 support issue.
+
+Looking for honest feedback from people who’ve actually tried to DJ a car or a party:
+
+1. Would you trust guests with the queue, or do you still want a host veto?
+2. Is $1.99 one-time for hosting fair, or does “free host / paid something else” feel better?
+3. Anything confusing in the first 60 seconds?
+
+App Store: https://apps.apple.com/us/app/social-jukebox/id6758019735  
+Site (road-trip angle): https://socialjukebox.app/road-trip  
+Host checklist: https://socialjukebox.app/host-playbook
+
+Happy to answer anything technical or product — roast away.
+
+────────────────────────────────────────
+POST B — r/iosapps (App Shelf megathread OR main feed if you qualify)
+────────────────────────────────────────
+Search the sub for the current “App Shelf” megathread and comment there unless
+you’ve confirmed you can post to the main feed (they require local karma /
+Trust or Transparency — read the pinned rules that week).
+
+Flair (if main feed): Dev - Self Promotion (or whatever the sub requires)
+
+Format — ABC (required by r/iosapps):
+
+**Social Jukebox** — democratic DJ / shared queue voting
+
+**A — Answer:** Stops one person hogging the aux. Host starts a session; friends join with a PIN and vote on what plays next. Guests don’t need Apple Music or Spotify.
+
+**B — Better:** Most “party playlist” options are either shared Spotify accounts, passing the phone, or cloud queues that need everyone signed in. Social Jukebox is local (same Wi‑Fi), PIN join, upvote/downvote queue, Apple Music *or* Spotify on the host, free for guests.
+
+**C — Cost:** Guest = free. Host (DJ Pro) = $1.99 one-time. No subscription.
+
+App Store: https://apps.apple.com/us/app/social-jukebox/id6758019735  
+(Screenshots encouraged — attach 1–2)
+
+Optional one-liner under the link:
+Built after a real beach-day aux fight. Feedback welcome, especially on first-run permissions.
+
+────────────────────────────────────────
+POST C — optional second story (wait 1+ week after A; different angle)
+────────────────────────────────────────
+Only if Post A did okay and you have a real update (e.g. v3.0 guest names,
+kick guest, etc.). Do NOT repost the same Aruba story.
+
+Title:
+Update: the #1 reason guests can’t join our party DJ app is an iOS permission nobody notices
 
 Body:
-Shotgun used to mean “you get the aux.” Now it just means arguments.
+Maker here. After shipping Social Jukebox, support kept saying “it can’t find the party.”
 
-Social Jukebox lets one person host Apple Music or Spotify, share a 4-digit PIN, and everyone in the car votes on what plays next. Guests don’t need a music subscription.
+Root cause: iOS Local Network permission. Deny it (or miss the popup) and Multipeer/device discovery fails with almost no useful error. Guests blame Wi‑Fi or the PIN.
 
-https://socialjukebox.app/road-trip
+What we tell hosts now:
+1. Before sharing the PIN, say “when your phone asks about Local Network, tap Allow”
+2. If they already denied: Settings → Privacy & Security → Local Network → Social Jukebox ON
 
-(iPhone / iPad / Mac — free to join, $1.99 one-time to host)
+Full checklist: https://socialjukebox.app/host-playbook  
+App: https://apps.apple.com/us/app/social-jukebox/id6758019735
+
+If you’ve shipped anything with Multipeer / Bonjour / local LAN: how did you surface permission failures in UI?
 
 ────────────────────────────────────────
-2) HOUSE PARTY — party hosting / college / apartment groups
+COMMENT TEMPLATES (only when someone asks)
 ────────────────────────────────────────
-Subject/title: Stop hogging the aux at house parties
+Use these in r/roadtrip, r/partyplanning, etc. ONLY as a reply to a question
+like “how do we share the aux?” / “playlist for the car?” — never as a new post.
+Always disclose.
 
-Body:
-If one person always DJs, half the room is annoyed by song 3.
+Template — road trip thread:
+---
+I’m biased — I built an app for this after too many aux fights.
 
-Social Jukebox is a democratic DJ: host starts a session, guests join with a PIN, upvote/downvote the queue. Works with Apple Music and Spotify. Guests don’t need accounts.
+One person hosts Apple Music or Spotify, everyone else joins with a PIN and votes on the queue. Guests don’t need a music subscription. Same Wi‑Fi.
 
+App Store: https://apps.apple.com/us/app/social-jukebox/id6758019735  
+More on the road-trip flow: https://socialjukebox.app/road-trip
+
+If that’s not what you want, shared Spotify Collaborative Playlist is the free zero-app option.
+---
+
+Template — house party thread:
+---
+Full disclosure: I make Social Jukebox.
+
+Host starts a session, guests join with a 4-digit PIN, upvote/downvote what plays next. Works with Apple Music or Spotify; guests don’t need accounts. Hosting is $1.99 one-time.
+
+https://apps.apple.com/us/app/social-jukebox/id6758019735  
 https://socialjukebox.app/house-party
 
-────────────────────────────────────────
-3) BEACH / ORIGIN — lifestyle / music / Aruba nostalgia posts
-────────────────────────────────────────
-Subject/title: We built a group playlist app after a beach day in Aruba
+Also: on iPhone, guests must Allow Local Network or they won’t see the party — that trips people up constantly.
+---
 
-Body:
-Born on a beach in Aruba watching one person struggle to please everyone with the speaker.
+════════════════════════════════════════
+INSTAGRAM @socialjukeboxapp (not Reddit)
+════════════════════════════════════════
 
-Social Jukebox: host the music, hand out a PIN, let the crowd vote. Same Wi‑Fi. Apple Music or Spotify.
-
-https://socialjukebox.app/beach
-
-────────────────────────────────────────
-4) HOST TIP — save this / how-to communities
-────────────────────────────────────────
-Subject/title: Host playbook: run a party without babysitting the aux
-
-Body:
-5-minute checklist for hosting Social Jukebox — including the Local Network “Allow” popup that silently breaks guest joins on iPhone.
-
-https://socialjukebox.app/host-playbook
-
-────────────────────────────────────────
-5) SHORT (X / Instagram / Stories caption)
-────────────────────────────────────────
+Caption (feed / Reel):
 Don’t let one person hog the aux.
 Road trips · house parties · beach days.
-Vote on the queue → https://socialjukebox.app/road-trip
+Vote on the queue 👇
 
-────────────────────────────────────────
+First comment:
+https://socialjukebox.app/road-trip
+
+Stories (link sticker → /road-trip):
+One person. One aux. Everyone mad.
+Fix it → Social Jukebox
+
+Hashtags (optional, 3–5 max):
+#roadtrip #houseparty #playlist #applemusic #spotify
+
+Origin Reel/carousel (best IG post):
+Born on a beach in Aruba watching one person struggle with the speaker.
+We built Social Jukebox so the crowd gets a vote.
+https://socialjukebox.app/beach  (first comment)
+
+════════════════════════════════════════
 ASO NOTES (App Store Connect — do manually)
-────────────────────────────────────────
+════════════════════════════════════════
 Subtitle ideas (≤30 chars):
 - Vote on the playlist
 - Democratic DJ for parties
 
-Keyword field ideas (comma-separated, no spaces after commas in ASC):
+Keyword field ideas:
 road trip,playlist,party,vote,queue,apple music,spotify,dj,aux,house party,beach,group playlist
 
-Promotional text: mention Apple Music + Spotify + free guest join.
-
-────────────────────────────────────────
-GOOGLE SEARCH CONSOLE (2 min — do once after deploy)
-────────────────────────────────────────
-1. Open https://search.google.com/search-console
-2. Property: socialjukebox.app (add if missing; DNS or HTML meta verify)
-3. Sitemaps → submit: https://socialjukebox.app/sitemap.xml
-4. URL Inspection → request indexing for:
-   /road-trip  /house-party  /beach  /host-playbook
-
-────────────────────────────────────────
-WHAT WE ARE NOT DOING YET
-────────────────────────────────────────
-- Paid ads (Apple Search Ads / Meta) until app_store_click events show which pages convert
-- Grok / extra AI agents for posting — not needed; Chatbase already covers support
-- iOS share-sheet invite loop — lives in the app repo (separate follow-up)
+════════════════════════════════════════
+GOOGLE SEARCH CONSOLE
+════════════════════════════════════════
+1. https://search.google.com/search-console
+2. Property: socialjukebox.app
+3. Sitemaps → https://socialjukebox.app/sitemap.xml
+4. Request indexing: /road-trip /house-party /beach /host-playbook

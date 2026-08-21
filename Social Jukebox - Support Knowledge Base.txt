@@ -1,0 +1,222 @@
+Social Jukebox — Support Knowledge Base
+Version 3.0 | August 2026 | For AI Support Bot Use
+
+What is Social Jukebox?
+
+Social Jukebox is a democratic DJ app for iPhone, iPad, and Mac. One person acts as the DJ (host) and creates a party session with a 4-digit PIN. Friends join as guests (with a name). Everyone can add songs and vote on what plays next — songs with the most votes rise to the top automatically.
+• Works with Apple Music AND Spotify — the DJ picks the service
+• Guests do NOT need an Apple Music or Spotify account
+• All devices must be on the same WiFi network (or nearby via Bluetooth)
+• No accounts needed to join — just a name and a 4-digit PIN
+• Available for iPhone, iPad, and Mac (Apple Silicon)
+• Android is not yet supported
+
+What's New in Version 3.0
+• See who's here — live guest list by name so the DJ knows who showed up to vote
+• Who put this on? — every track shows who added it
+• Boot the chaos — the DJ can kick a guest who's wrecking the vibe
+• Name before you join — guests enter a display name before they get in (no more anonymous queue bombers)
+
+Music Services — Apple Music & Spotify
+
+Social Jukebox supports two music services. The DJ picks one when starting a session. Guests interact with the queue the same way regardless of which service the DJ chose.
+
+Feature comparison:
+• DJ subscription required — Apple Music: Apple Music subscription | Spotify: Spotify app + account
+• Guest subscription required — Apple Music: No | Spotify: No
+• Playlist import — Apple Music: Yes | Spotify: Yes
+• Full catalog search — Apple Music: Yes | Spotify: Yes
+• Brief app handoff on first use — Apple Music: No | Spotify: Yes (normal behavior)
+
+Apple Music
+• Requires an active Apple Music subscription on the DJ's device
+• Full catalog access via Apple's MusicKit framework
+• Import playlists directly from the DJ's Apple Music library
+• Guests do NOT need an Apple Music subscription
+
+Spotify
+• Requires the Spotify app installed on the DJ's device
+• Full catalog access and playlist import from the DJ's Spotify library
+• When Spotify is selected for the first time, the app briefly opens the Spotify app to authorize — you'll see an "Opening Spotify..." message and return automatically
+• Returning DJs with a saved Spotify login skip this step entirely
+• Guests do NOT need a Spotify account
+
+Getting Started
+
+How to Start a Party (DJ)
+1. Open Social Jukebox and tap "I'm the DJ"
+2. Pick your music service: Apple Music or Spotify
+3. If using Spotify for the first time, the app briefly opens Spotify to authorize — this is normal
+4. A 4-digit PIN appears — share it with your guests
+5. Import a playlist or search for songs to build your queue
+6. Tap "Play Next Song" to start the music
+
+Hosting requires DJ Pro ($1.99 one-time purchase). Joining as a guest is always free.
+
+How to Join a Party (Guest)
+1. Open Social Jukebox and tap "I'm a Guest"
+2. Enter your display name (required in 3.0)
+3. Enter the 4-digit PIN from the DJ
+4. Tap "Join Party"
+5. You're connected! Add songs, vote, and send reactions
+
+Make sure you're on the same WiFi network as the DJ.
+
+Adding Music
+
+How to Add Songs
+• Tap "Add Song or Playlist"
+• Search by title or artist
+• Tap the "+" button next to any song
+• The song appears in the queue for everyone to vote on
+• Everyone can see who added each song
+
+How to Import a Playlist
+• Tap "Add Song or Playlist" then "Import from Playlist"
+• Select a playlist from your Apple Music or Spotify library
+• Songs are added to the party queue
+
+Limits: Guests can import up to 50 songs per playlist. DJs with DJ Pro can import unlimited songs.
+Spotify DJs: Playlist access is available immediately after picking Spotify — you don't need to play a song first.
+
+Voting System
+
+How Voting Works
+• Upvote (up arrow): Moves the song higher in the queue
+• Downvote (down arrow): Moves the song lower in the queue
+• Songs with the most votes play first
+• You can change your vote at any time
+
+What are Super Votes?
+Super Votes count for significantly more than a standard vote, pushing a song toward the top instantly.
+• Everyone gets 3 free Super Votes per session
+• Look for the lightning bolt icon next to songs to use a Super Vote
+• Remaining Super Votes are shown in the top-right corner
+
+Can I Remove a Song?
+Individual songs cannot be removed. To clear the queue, the DJ can end the session and start a new one. Alternatively, downvote songs you don't want — they'll sink to the bottom. A song can also be auto-skipped or removed when a majority of voters have downvoted it (with at least 3 people voting) AND its overall score drops below zero. Super Votes help protect a song because their boost must be overcome before the score can go negative. The DJ's "play now" / Force Play pick is never auto-skipped.
+
+DJ Controls
+
+What Controls Does the DJ Have?
+• Play/Pause: Control when music plays
+• Play Next Song: Advance to the next song in the queue
+• Force Play: Tap any song to play it immediately, bypassing vote order
+• Invite: Share the party PIN with friends
+• Guest list: See who's connected by name
+• Kick guest: Remove someone who's wrecking the vibe
+• Participant count: Shows how many guests are connected
+
+Only the DJ can skip songs, kick guests, or control playback. Guests cannot skip — they influence the queue through votes.
+
+Emoji Reactions
+
+Tap any emoji at the bottom of the screen. It floats across everyone's screen in real-time. Tap the smiley face button to see more options.
+Quick reactions: fire, heart, cool face, party popper, music note, wine glass, dancer, bus
+
+Session & Connection
+
+What Happens if the DJ Closes the App?
+With DJ Pro:
+• Session is automatically saved
+• Reopen the app and tap "Resume Session"
+• Queue and current song are restored; guests rejoin with the same PIN
+Without DJ Pro:
+• Session ends when the app is closed
+• All queue data is lost
+
+Why Can't I Connect?
+• Same WiFi network: You must be on the exact same WiFi as the DJ
+• Correct PIN: Double-check the 4-digit code
+• Local Network permission: On iPhone/iPad, go to Settings → Privacy & Security → Local Network and make sure Social Jukebox is on
+• DJ is still hosting: Make sure the DJ hasn't ended the session or kicked you
+• Wait a moment: Connection sometimes takes a few seconds
+
+DJ Pro Purchase
+
+Feature | Free (Guest) | DJ Pro ($1.99)
+• Host a party | No | Yes
+• Join a party | Yes | Yes
+• Add songs & vote | Yes | Yes
+• Super Votes | 3 per session | 3 per session
+• Import playlists | Up to 50 songs | Unlimited
+• Save & restore sessions | No | Yes
+• See guest list / kick guests | No (guest) | Yes
+• Hear music (DJ device only) | No (guest) | Yes
+
+To restore a previous purchase: tap "I'm the DJ" and then "Restore Purchase" on the DJ Pro screen.
+
+Background Playback & CarPlay
+• Music continues playing when the DJ switches apps or locks the phone
+• Lock screen controls work (play, pause, skip)
+• CarPlay is fully supported — music plays through car speakers with basic controls on the CarPlay screen
+• Guests can switch apps and rejoin; the party continues without them
+
+Privacy & Data
+Social Jukebox does not collect personal data. No accounts, no analytics, no advertising. All party data stays on local devices. Communication happens peer-to-peer between devices. Guest display names are shared only with other devices in the party session.
+Apple Music: Only searches the catalog and plays queued songs. Your library stays private.
+Spotify: Authorization tokens are exchanged through a secure proxy server (socialjukebox.app) to protect your credentials. We do not store Spotify account data or listening history.
+
+Troubleshooting
+
+Spotify-Specific Issues
+• "Opening Spotify..." appears briefly — Normal on first use. The app authorizes via the Spotify app and returns automatically.
+• Songs getting cut off at the end — Update to version 3.0 or later. Fixed in 2.2+.
+• Timer stuck at 0:00 during playback — Update to version 3.0 or later. Fixed in 2.2+.
+• Playlists not loading before first play — Update to version 3.0 or later. Playlists load immediately after picking Spotify.
+
+Apple Music-Specific Issues
+• Resume Last Session freezes — Update to version 3.0 or later. Fixed in 2.2+.
+• Songs not advancing automatically — Update to version 3.0 or later. Playback transitions improved.
+
+General Issues
+• Music won't play: Check subscription is active / Spotify app is installed. Check volume and Bluetooth.
+• App running slowly: Close background apps, ensure strong WiFi, wait for large playlist imports to finish.
+• Songs not syncing: Confirm all devices on same WiFi, check PIN matches, have guest leave and rejoin.
+• Can't hear music as a guest: Only the DJ's device plays audio. This is by design.
+• Can't find a song: Check spelling, try artist name instead of song title, some tracks vary by region.
+• Got kicked from the party: The DJ removed you. Ask them for the PIN again if they want you back — you'll need to rejoin with your name.
+
+Tips for a Great Party
+
+For DJs
+• Pre-load a playlist before guests arrive
+• Pick your music service before guests arrive — Spotify auth only takes a moment
+• Share the PIN using the green Invite button
+• Use Force Play when the moment calls for a specific song
+• Use the guest list and kick when someone is wrecking the vibe
+• Keep your phone plugged in — DJ mode uses battery
+For Guests
+• Pick a clear display name so people know who added what
+• Use Super Votes wisely — you only get 3 per session
+• Import a playlist instead of adding songs one by one
+• Vote on existing songs to influence what plays next
+• Send reactions to hype up good songs
+
+Quick Reference — Feature Comparison
+
+Feature | DJ | Guest
+• Start a party | Yes (DJ Pro required) | No
+• Join a party | Yes | Yes
+• Display name required | Optional (DJ) | Yes
+• Add songs | Yes | Yes
+• Song shows who added it | Yes | Yes
+• Vote on songs | Yes | Yes
+• Super Votes | 3 free per session | 3 free per session
+• Import playlists | Unlimited | Up to 50 songs
+• Control playback | Yes | No
+• Force play songs | Yes | No
+• Kick guests | Yes | No
+• See guest list | Yes | Limited
+• Send reactions | Yes | Yes
+• Hear music | Yes | No (DJ's device only)
+• Needs music service | Yes (Apple Music or Spotify) | No
+
+Contact & Support
+• Website: https://socialjukebox.app
+• Support page: https://socialjukebox.app/support
+• Email: support@socialjukebox.app
+• AI assistant: Available 24/7 on the support page
+
+Made by SPECLINE TECH LLC | Current App Version: 3.0 (August 2026) | Supported Devices: iPhone, iPad, Mac (Apple Silicon) | Minimum iOS: 17.0
+Patent Pending. © 2026 Specline Tech LLC. All rights reserved.
