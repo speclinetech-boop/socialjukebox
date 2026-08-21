@@ -1,32 +1,32 @@
-Social Jukebox — Support Knowledge Base
+Social Jukebox. Support Knowledge Base
 Version 3.0 | August 2026 | For AI Support Bot Use
 
 What is Social Jukebox?
 
-Social Jukebox is a democratic DJ app for iPhone, iPad, and Mac. One person acts as the DJ (host) and creates a party session with a 4-digit PIN. Friends join as guests (with a name). Everyone can add songs and vote on what plays next — songs with the most votes rise to the top automatically.
-• Works with Apple Music AND Spotify — the DJ picks the service
+Social Jukebox is a democratic DJ app for iPhone, iPad, and Mac. One person acts as the DJ (host) and creates a party session with a 4-digit PIN. Friends join as guests (with a name). Everyone can add songs and vote on what plays next: songs with the most votes rise to the top automatically.
+• Works with Apple Music AND Spotify. The DJ picks the service
 • Guests do NOT need an Apple Music or Spotify account
 • All devices must be on the same WiFi network (or nearby via Bluetooth)
-• No accounts needed to join — just a name and a 4-digit PIN
+• No accounts needed to join. Just a name and a 4-digit PIN
 • Available for iPhone, iPad, and Mac (Apple Silicon)
 • Android is not yet supported
 
 What's New in Version 3.0
-• See who's here — live guest list by name so the DJ knows who showed up to vote
-• Who put this on? — every track shows who added it
-• Boot the chaos — the DJ can kick a guest who's wrecking the vibe
-• Name before you join — guests enter a display name before they get in (no more anonymous queue bombers)
+• See who's here: live guest list by name so the DJ knows who showed up to vote
+• Who put this on?: every track shows who added it
+• Boot the chaos. The DJ can kick a guest who's wrecking the vibe
+• Name before you join. Guests enter a display name before they get in (no more anonymous queue bombers)
 
-Music Services — Apple Music & Spotify
+Music Services. Apple Music & Spotify
 
 Social Jukebox supports two music services. The DJ picks one when starting a session. Guests interact with the queue the same way regardless of which service the DJ chose.
 
 Feature comparison:
-• DJ subscription required — Apple Music: Apple Music subscription | Spotify: Spotify app + account
-• Guest subscription required — Apple Music: No | Spotify: No
-• Playlist import — Apple Music: Yes | Spotify: Yes
-• Full catalog search — Apple Music: Yes | Spotify: Yes
-• Brief app handoff on first use — Apple Music: No | Spotify: Yes (normal behavior)
+• DJ subscription required. Apple Music: Apple Music subscription | Spotify: Spotify app + account
+• Guest subscription required. Apple Music: No | Spotify: No
+• Playlist import. Apple Music: Yes | Spotify: Yes
+• Full catalog search. Apple Music: Yes | Spotify: Yes
+• Brief app handoff on first use. Apple Music: No | Spotify: Yes (normal behavior)
 
 Apple Music
 • Requires an active Apple Music subscription on the DJ's device
@@ -37,7 +37,7 @@ Apple Music
 Spotify
 • Requires the Spotify app installed on the DJ's device
 • Full catalog access and playlist import from the DJ's Spotify library
-• When Spotify is selected for the first time, the app briefly opens the Spotify app to authorize — you'll see an "Opening Spotify..." message and return automatically
+• When Spotify is selected for the first time, the app briefly opens the Spotify app to authorize: you'll see an "Opening Spotify..." message and return automatically
 • Returning DJs with a saved Spotify login skip this step entirely
 • Guests do NOT need a Spotify account
 
@@ -46,8 +46,8 @@ Getting Started
 How to Start a Party (DJ)
 1. Open Social Jukebox and tap "I'm the DJ"
 2. Pick your music service: Apple Music or Spotify
-3. If using Spotify for the first time, the app briefly opens Spotify to authorize — this is normal
-4. A 4-digit PIN appears — share it with your guests
+3. If using Spotify for the first time, the app briefly opens Spotify to authorize. This is normal
+4. A 4-digit PIN appears: share it with your guests
 5. Import a playlist or search for songs to build your queue
 6. Tap "Play Next Song" to start the music
 
@@ -77,7 +77,7 @@ How to Import a Playlist
 • Songs are added to the party queue
 
 Limits: Guests can import up to 50 songs per playlist. DJs with DJ Pro can import unlimited songs.
-Spotify DJs: Playlist access is available immediately after picking Spotify — you don't need to play a song first.
+Spotify DJs: Playlist access is available immediately after picking Spotify: you don't need to play a song first.
 
 Voting System
 
@@ -94,7 +94,7 @@ Super Votes count for significantly more than a standard vote, pushing a song to
 • Remaining Super Votes are shown in the top-right corner
 
 Can I Remove a Song?
-Individual songs cannot be removed. To clear the queue, the DJ can end the session and start a new one. Alternatively, downvote songs you don't want — they'll sink to the bottom. A song can also be auto-skipped or removed when a majority of voters have downvoted it (with at least 3 people voting) AND its overall score drops below zero. Super Votes help protect a song because their boost must be overcome before the score can go negative. The DJ's "play now" / Force Play pick is never auto-skipped.
+Individual songs cannot be removed. To clear the queue, the DJ can end the session and start a new one. Alternatively, downvote songs you don't want: they'll sink to the bottom. A song can also be auto-skipped or removed when a majority of voters have downvoted it (with at least 3 people voting) AND its overall score drops below zero. Super Votes help protect a song because their boost must be overcome before the score can go negative. The DJ's "play now" / Force Play pick is never auto-skipped.
 
 DJ Controls
 
@@ -107,7 +107,7 @@ What Controls Does the DJ Have?
 • Kick guest: Remove someone who's wrecking the vibe
 • Participant count: Shows how many guests are connected
 
-Only the DJ can skip songs, kick guests, or control playback. Guests cannot skip — they influence the queue through votes.
+Only the DJ can skip songs, kick guests, or control playback. Guests cannot skip. They influence the queue through votes.
 
 Emoji Reactions
 
@@ -149,7 +149,7 @@ To restore a previous purchase: tap "I'm the DJ" and then "Restore Purchase" on 
 Background Playback & CarPlay
 • Music continues playing when the DJ switches apps or locks the phone
 • Lock screen controls work (play, pause, skip)
-• CarPlay is fully supported — music plays through car speakers with basic controls on the CarPlay screen
+• CarPlay is fully supported: music plays through car speakers with basic controls on the CarPlay screen
 • Guests can switch apps and rejoin; the party continues without them
 
 Privacy & Data
@@ -160,14 +160,14 @@ Spotify: Authorization tokens are exchanged through a secure proxy server (socia
 Troubleshooting
 
 Spotify-Specific Issues
-• "Opening Spotify..." appears briefly — Normal on first use. The app authorizes via the Spotify app and returns automatically.
-• Songs getting cut off at the end — Update to version 3.0 or later. Fixed in 2.2+.
-• Timer stuck at 0:00 during playback — Update to version 3.0 or later. Fixed in 2.2+.
-• Playlists not loading before first play — Update to version 3.0 or later. Playlists load immediately after picking Spotify.
+• "Opening Spotify..." appears briefly. Normal on first use. The app authorizes via the Spotify app and returns automatically.
+• Songs getting cut off at the end. Update to version 3.0 or later. Fixed in 2.2+.
+• Timer stuck at 0:00 during playback. Update to version 3.0 or later. Fixed in 2.2+.
+• Playlists not loading before first play. Update to version 3.0 or later. Playlists load immediately after picking Spotify.
 
 Apple Music-Specific Issues
-• Resume Last Session freezes — Update to version 3.0 or later. Fixed in 2.2+.
-• Songs not advancing automatically — Update to version 3.0 or later. Playback transitions improved.
+• Resume Last Session freezes. Update to version 3.0 or later. Fixed in 2.2+.
+• Songs not advancing automatically. Update to version 3.0 or later. Playback transitions improved.
 
 General Issues
 • Music won't play: Check subscription is active / Spotify app is installed. Check volume and Bluetooth.
@@ -175,25 +175,25 @@ General Issues
 • Songs not syncing: Confirm all devices on same WiFi, check PIN matches, have guest leave and rejoin.
 • Can't hear music as a guest: Only the DJ's device plays audio. This is by design.
 • Can't find a song: Check spelling, try artist name instead of song title, some tracks vary by region.
-• Got kicked from the party: The DJ removed you. Ask them for the PIN again if they want you back — you'll need to rejoin with your name.
+• Got kicked from the party: The DJ removed you. Ask them for the PIN again if they want you back: you'll need to rejoin with your name.
 
 Tips for a Great Party
 
 For DJs
 • Pre-load a playlist before guests arrive
-• Pick your music service before guests arrive — Spotify auth only takes a moment
+• Pick your music service before guests arrive. Spotify auth only takes a moment
 • Share the PIN using the green Invite button
 • Use Force Play when the moment calls for a specific song
 • Use the guest list and kick when someone is wrecking the vibe
-• Keep your phone plugged in — DJ mode uses battery
+• Keep your phone plugged in. DJ mode uses battery
 For Guests
 • Pick a clear display name so people know who added what
-• Use Super Votes wisely — you only get 3 per session
+• Use Super Votes wisely: you only get 3 per session
 • Import a playlist instead of adding songs one by one
 • Vote on existing songs to influence what plays next
 • Send reactions to hype up good songs
 
-Quick Reference — Feature Comparison
+Quick Reference. Feature Comparison
 
 Feature | DJ | Guest
 • Start a party | Yes (DJ Pro required) | No

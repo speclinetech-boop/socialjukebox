@@ -1,4 +1,4 @@
-# Social Jukebox — Website
+# Social Jukebox. Website
 
 Marketing site and Spotify OAuth token proxy for [Social Jukebox](https://socialjukebox.app), the democratic DJ app from [SPECLINE TECH LLC](https://specline.co).
 

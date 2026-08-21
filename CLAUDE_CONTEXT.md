@@ -13,7 +13,7 @@ This document helps keep Desktop Claude (claude.ai) and Xcode Claude in sync. Up
 **Developer:** Phil Calzadilla
 **Status:** LIVE on App Store
 
-**What it does:** Democratic DJ app — one person hosts music (DJ), others join via PIN and vote on songs. Best songs rise to the top. Works with **Apple Music or Spotify**.
+**What it does:** Democratic DJ app: one person hosts music (DJ), others join via PIN and vote on songs. Best songs rise to the top. Works with **Apple Music or Spotify**.
 
 **Origin Story:** Born on the beach in Aruba, 2025. The idea came from watching one person struggle to DJ while everyone complained about song choices. "Music should be a conversation, not a monologue."
 
@@ -33,13 +33,13 @@ Text("Ask the DJ for the 4-digit code")
 **Why:** Phil's 68-year-old cousin couldn't figure out that he needed a PIN from someone hosting a party. Users don't understand they need a DJ to give them the code.
 
 ### 2. Local Network Permission Warning (HIGH PRIORITY)
-**Issue:** iPhone SE users (and others) cannot connect because iOS silently blocks Multipeer Connectivity when Local Network permission is denied. The app gives no feedback — the guest just sees a spinner or nothing.
+**Issue:** iPhone SE users (and others) cannot connect because iOS silently blocks Multipeer Connectivity when Local Network permission is denied. The app gives no feedback. The guest just sees a spinner or nothing.
 
 **Root cause:** iOS 14+ requires explicit Local Network permission for Multipeer Connectivity / NWBrowser. If the user denied the prompt or it never appeared, device discovery silently fails.
 
 **Recommended fix (two parts):**
 
-**Part A — Detect and surface a permission warning:**
+**Part A. Detect and surface a permission warning:**
 When the guest taps "Join" and peer discovery hasn't found the DJ after ~5 seconds, check Local Network permission status and show an alert:
 ```swift
 // After ~5s with no peers found, show:
@@ -53,7 +53,7 @@ Alert(
 )
 ```
 
-**Part B — Info.plist (verify these keys are present):**
+**Part B. Info.plist (verify these keys are present):**
 ```xml
 <key>NSLocalNetworkUsageDescription</key>
 <string>Social Jukebox uses your local network to connect guests to the DJ's session.</string>
@@ -67,7 +67,7 @@ Alert(
 
 **Why this matters:** This is the #1 cause of connection failure reported by iPhone SE users and anyone who denied the permission dialog on first launch. The app currently gives no indication that the problem is a permissions issue, so users blame the DJ or the app and give up.
 
-### 3. Spotify proxy API key (WEBSITE + APP — July 21, 2026)
+### 3. Spotify proxy API key (WEBSITE + APP. July 21, 2026)
 **Website:** Rate limits + redirect allowlist are live. Enforcement activates when Vercel `SPOTIFY_PROXY_API_KEY` is set.
 **iOS:** `SpotifyAuthManager.proxyAPIKey` must match that env var. Sent as `X-Api-Key` on JSON proxy calls and as `?key=` on SPTAppRemote `tokenSwapURL` / `tokenRefreshURL`.
 **Rollout:** Ship iOS with the key first, then set the Vercel env var (soft → hard). Do not enable the env var before the App Store build that sends the key is in users' hands (or TestFlight-only if you accept breaking older builds).
@@ -93,14 +93,14 @@ The app runs on:
 
 ## KEY FEATURES
 
-- **DJ Pro** ($1.99 in-app purchase) — unlocks hosting
-- **Guest mode** — free, join via 4-digit PIN
-- **Democratic voting** — upvote/downvote songs
-- **VIP Super Votes** — boost songs to top
-- **Background audio** — music keeps playing when app backgrounded
-- **Session persistence** — can resume interrupted DJ sessions
-- **Multipeer Connectivity** — works without internet, just WiFi
-- **Apple Music + Spotify** — DJ picks a service; guests search/vote accordingly
+- **DJ Pro** ($1.99 in-app purchase): unlocks hosting
+- **Guest mode**: free, join via 4-digit PIN
+- **Democratic voting**: upvote/downvote songs
+- **VIP Super Votes**: boost songs to top
+- **Background audio**: music keeps playing when app backgrounded
+- **Session persistence**: can resume interrupted DJ sessions
+- **Multipeer Connectivity**: works without internet, just WiFi
+- **Apple Music + Spotify**. DJ picks a service; guests search/vote accordingly
 
 ---
 

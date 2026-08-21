@@ -1,0 +1,23 @@
+---
+description: Never use em dashes in copy, comments, or docs
+alwaysApply: true
+---
+
+# No em dashes
+
+Never use the em dash character (`—`, U+2014) in any writing: UI copy, marketing, Reddit/social posts, comments, commit messages, README, or docs.
+
+## Use instead
+
+- Comma, period, or semicolon
+- Colon for "here's what follows"
+- Parentheses for asides
+- A spaced hyphen (` - `) only if you truly need a dash pause
+
+```text
+Bad:  Guests join with a PIN — they don't need a subscription.
+Good: Guests join with a PIN. They don't need a subscription.
+Good: Guests join with a PIN (they don't need a subscription).
+```
+
+Also avoid copying em dashes from other docs into this repo. If you see one while editing, replace it.

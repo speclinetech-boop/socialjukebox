@@ -1,5 +1,5 @@
 /**
- * Social Jukebox — App Store click tracking via Vercel Web Analytics.
+ * Social Jukebox. App Store click tracking via Vercel Web Analytics.
  * Requires window.va queue (see each page <head>) + /_vercel/insights/script.js
  *
  * Event: app_store_click

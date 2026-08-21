@@ -80,7 +80,7 @@ export default async function handler(req, res) {
     }
   } else if (grant_type === 'client_credentials') {
     // Guest search: app-level token, no user context.
-    // Prefer requiring SPOTIFY_PROXY_API_KEY in production — this grant is the
+    // Prefer requiring SPOTIFY_PROXY_API_KEY in production. This grant is the
     // main public abuse vector when the proxy is open.
     spotifyBody = new URLSearchParams({
       grant_type: 'client_credentials',
