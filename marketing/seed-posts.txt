@@ -3,6 +3,7 @@ Updated: 2026-08-21
 
 OWNED CHANNELS
 - Instagram: https://www.instagram.com/socialjukeboxapp/
+- Facebook: https://www.facebook.com/profile.php?id=61590727654492
 - X / Twitter: none (skip for now)
 
 ════════════════════════════════════════
@@ -178,6 +179,31 @@ Origin Reel/carousel (best IG post):
 I had the speaker on a beach in Aruba. Friends kept rolling their eyes.
 So I built Social Jukebox: the crowd gets a vote.
 https://socialjukebox.app/beach (first comment)
+
+════════════════════════════════════════
+FACEBOOK (page: profile.php?id=61590727654492)
+════════════════════════════════════════
+Post as the Social Jukebox page. Attach 1 screenshot or the beach/origin photo.
+Link goes in the post body (Facebook is fine with links).
+
+Copy/paste:
+
+Aruba, Nov 2025. On the beach. I had a speaker. Five couples on the trip, all sitting together. Varied musical tastes, and I was trying to keep everyone happy and somehow made no one happy.
+
+That was the moment my cousin said, "You should make an app for that." It clicked: music at a gathering shouldn't be one person guessing.
+
+So I built Social Jukebox.
+
+One person hosts with Apple Music or Spotify. Friends join with a 4-digit PIN (they don't need a music subscription). Everyone adds songs and votes. The queue reorders itself.
+
+Hosting is $1.99 one-time. Joining is free. iPhone, iPad, and Mac.
+
+Road trips, house parties, beach days. Let the crowd decide.
+
+https://socialjukebox.app/beach
+App Store: https://apps.apple.com/us/app/social-jukebox/id6758019735
+
+If you've ever been stuck as the Playlist Dictator, try it and tell me what feels off in the first minute.
 
 ════════════════════════════════════════
 ASO NOTES (App Store Connect - do manually)
