@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Playbook: Run a Party Without Hogging the Aux | Social Jukebox</title>
+    <meta name="description" content="The 5-minute Social Jukebox host checklist — setup, PIN, Local Network Allow popup, house rules, and how to stop one person dominating the queue. Save this for your next party.">
+    <link rel="canonical" href="https://socialjukebox.app/host-playbook.html">
+
+    <meta name="apple-itunes-app" content="app-id=6758019735">
+    <meta name="theme-color" content="#302b63">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://www.chatbase.co">
+
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://socialjukebox.app/host-playbook.html">
+    <meta property="og:title" content="Host Playbook: Run a Party Without Hogging the Aux">
+    <meta property="og:description" content="5-minute host checklist + the Local Network Allow popup guests always miss. Save this for your next road trip, house party, or beach day.">
+    <meta property="og:image" content="https://socialjukebox.app/images/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://socialjukebox.app/host-playbook.html">
+    <meta name="twitter:title" content="Host Playbook: Run a Party Without Hogging the Aux">
+    <meta name="twitter:description" content="5-minute host checklist + the Local Network Allow popup guests always miss. Save this for your next party.">
+    <meta name="twitter:image" content="https://socialjukebox.app/images/og-image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0c29;
+        }
+        .app-gradient {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #c084fc, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        html { scroll-behavior: smooth; }
+        @media (max-width: 768px) {
+            .animate-blob { display: none; }
+        }
+    </style>
+
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
+</head>
+<body class="app-gradient text-white min-h-screen flex flex-col">
+
+    <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center glass-panel sticky top-0 z-50">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <i class="fa-solid fa-music text-purple-400 text-2xl"></i>
+            <span class="font-bold text-xl tracking-tight">Social Jukebox</span>
+        </a>
+        <div class="flex gap-6">
+            <a href="support.html" class="text-sm font-semibold text-gray-300 hover:text-white transition">Support</a>
+        </div>
+    </nav>
+
+    <header class="px-6 pt-16 pb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+
+        <div class="container mx-auto max-w-3xl relative z-10 text-center space-y-6">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-purple-500/20 border border-purple-500/50 text-xs font-semibold text-purple-300 uppercase tracking-wide">
+                Save this · Host playbook
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                The Party Host System<br>
+                <span class="text-gradient">We Almost Didn't Publish.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                A 5-minute setup checklist and a few house rules that end “who put this on” fights — without you babysitting the aux all night.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-400">
+                <a href="#setup" class="hover:text-white transition">Setup checklist</a>
+                <span class="text-gray-600">·</span>
+                <a href="#popups" class="hover:text-white transition text-amber-300/90">Permission popups</a>
+                <span class="text-gray-600">·</span>
+                <a href="#rules" class="hover:text-white transition">House rules</a>
+                <span class="text-gray-600">·</span>
+                <a href="#pro-tips" class="hover:text-white transition">Pro tips</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SETUP CHECKLIST -->
+    <section id="setup" class="py-16 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">5-minute host setup</h2>
+                <p class="text-gray-400">Do this before the first guest asks for the aux.</p>
+            </div>
+
+            <ol class="space-y-4" style="counter-reset: step;">
+                <li class="check-item glass-panel rounded-2xl p-6 md:p-8 flex gap-5 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-purple-500/20 text-purple-300 font-extrabold flex items-center justify-center check-item::marker" style="counter-increment: none;"></span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Open Social Jukebox → I'm the DJ</h3>
+                        <p class="text-gray-400 leading-relaxed">Hosting needs DJ Pro (one-time unlock). Guests join free — they never pay to vote.</p>
+                    </div>
+                </li>
+                <li class="check-item glass-panel rounded-2xl p-6 md:p-8 flex gap-5 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 font-extrabold flex items-center justify-center"></span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Pick Apple Music or Spotify — and approve every popup</h3>
+                        <p class="text-gray-400 leading-relaxed">iOS and the music apps will ask for permission. Tap <strong class="text-white">Allow</strong> / authorize when prompted. Spotify may briefly open Spotify to authorize playback — that's normal. Guests don't need that account; they just join and vote.</p>
+                    </div>
+                </li>
+                <li class="check-item glass-panel rounded-2xl p-6 md:p-8 flex gap-5 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-pink-500/20 text-pink-300 font-extrabold flex items-center justify-center"></span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Seed 5–10 songs so the queue isn't empty</h3>
+                        <p class="text-gray-400 leading-relaxed">A blank queue is awkward. Drop a short opener list, then let the room take over.</p>
+                    </div>
+                </li>
+                <li class="check-item glass-panel rounded-2xl p-6 md:p-8 flex gap-5 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-300 font-extrabold flex items-center justify-center"></span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Share the 4-digit PIN — and warn guests about the Local Network popup</h3>
+                        <p class="text-gray-400 leading-relaxed">Guests tap I'm a Guest and enter the PIN. Same Wi‑Fi as you. When iOS asks for <strong class="text-white">Local Network</strong> access, they must tap <strong class="text-white">Allow</strong> — if they miss or deny it, they won't find the party.</p>
+                    </div>
+                </li>
+                <li class="check-item glass-panel rounded-2xl p-6 md:p-8 flex gap-5 items-start">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-green-500/20 text-green-300 font-extrabold flex items-center justify-center"></span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Say the one-liner rule once</h3>
+                        <p class="text-gray-400 leading-relaxed">“Add what you want. Upvote the bangers. Downvote the duds. The queue decides — not the person with the cord.”</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PERMISSION POPUPS — CRITICAL -->
+    <section id="popups" class="py-16 px-6">
+        <div class="container mx-auto max-w-3xl">
+            <div class="rounded-3xl border border-amber-400/40 bg-amber-500/10 p-8 md:p-10 mb-10">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-300 text-xl">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-widest text-amber-300 mb-2">Most important section · Read this out loud to guests</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3">Don't miss the popups</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            People skip these in a hurry — then blame the app when they can't join. If a system popup appears, <strong class="text-white">tap Allow</strong>. Denying Local Network is the #1 reason guests never find the party.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="glass-panel rounded-2xl p-6 border border-amber-400/20">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-amber-500/20 text-amber-300 text-sm font-extrabold">1</span>
+                            Local Network (DJ + every guest)
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed mb-3">
+                            iOS will ask something like: <em class="text-white">“Social Jukebox would like to find and connect to devices on your local network.”</em>
+                        </p>
+                        <p class="text-white font-semibold mb-2">→ Tap <span class="text-amber-300">Allow</span>. Every time. Host and guests.</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            If someone already tapped Don't Allow (or the popup never showed): <strong class="text-gray-200">Settings → Privacy &amp; Security → Local Network → turn on Social Jukebox</strong>. If it's missing from the list, open the app and try joining again so iOS re-prompts.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl p-6 border border-amber-400/20">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-amber-500/20 text-amber-300 text-sm font-extrabold">2</span>
+                            Music / Spotify authorization (DJ only)
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed mb-3">
+                            When you pick a music service, Apple Music or Spotify may ask for access. Spotify may briefly jump into the Spotify app to authorize playback — that's expected.
+                        </p>
+                        <p class="text-white font-semibold">→ Approve it. Guests never need this step.</p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl p-6 border border-amber-400/20">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-amber-500/20 text-amber-300 text-sm font-extrabold">3</span>
+                            Same Wi‑Fi (everyone)
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Allowing Local Network only works if you're on the <strong class="text-white">exact same Wi‑Fi</strong> as the DJ — not cellular, not a hotel network that isolates devices, not “same building, different band names.”
+                        </p>
+                    </div>
+                </div>
+
+                <p class="mt-6 text-sm text-amber-200/90 leading-relaxed">
+                    Host tip: before you share the PIN, say — <em class="text-white">“When your phone asks about Local Network, tap Allow or you won't see the party.”</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOUSE RULES -->
+    <section id="rules" class="py-16 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">House rules that stop aux fights</h2>
+                <p class="text-gray-400">Post these in the group chat. Takes 10 seconds. Saves the night.</p>
+            </div>
+
+            <div class="grid gap-4">
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-ban text-purple-400"></i>
+                        No aux monopoly
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">Nobody sits on the cable all night. Everyone adds from their own phone. Votes move the queue.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-check-to-slot text-indigo-400"></i>
+                        Votes &gt; opinions shouted across the room
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">Hate a track? Downvote it. Love it? Upvote. Debating “who put this on” out loud is optional theater.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-crown text-pink-400"></i>
+                        Super Votes are rare — treat them that way
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">Everyone gets 3 free Super Votes per session (+5 and a shield). Save them for the song you'll regret missing — not every opener.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-user-tag text-cyan-400"></i>
+                        Own your add
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">Every song shows who added it. Celebrate the banger. Gently roast the dud. That's the fun — not a fight over the cord.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="text-lg font-bold mb-2 flex items-center gap-3">
+                        <i class="fa-solid fa-gavel text-green-400"></i>
+                        DJ keeps the nuclear option
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">You can still skip, play now, or kick a guest if someone is wrecking the vibe. Democracy with a host — not chaos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO TIPS -->
+    <section id="pro-tips" class="py-16 px-6">
+        <div class="container mx-auto max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">Pro tips from real hosts</h2>
+                <p class="text-gray-400">The stuff that usually breaks a session — solved early.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-panel rounded-2xl p-6 md:p-8 border border-amber-400/25">
+                    <h3 class="font-bold text-lg mb-2">Guest stuck on a spinner? They denied Local Network</h3>
+                    <p class="text-gray-400 leading-relaxed">iOS fails silently if Local Network is off — no useful error, just “can't find the party.” Fix: <strong class="text-gray-200">Settings → Privacy &amp; Security → Local Network → Social Jukebox ON</strong>. Then re-enter the PIN. See <a href="#popups" class="text-amber-300 hover:text-white transition">Don't miss the popups</a>.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="font-bold text-lg mb-2">Mac near the speakers = DJ dashboard</h3>
+                    <p class="text-gray-400 leading-relaxed">For house parties, run the host on a Mac by the speaker. Guests vote from phones. You see the guest list, who added what, and the live queue on a big screen.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="font-bold text-lg mb-2">Names on join keep the room honest</h3>
+                    <p class="text-gray-400 leading-relaxed">Guests enter a name before they join. You see who's here. No more anonymous queue bombers.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-6 md:p-8">
+                    <h3 class="font-bold text-lg mb-2">Built for real hangouts</h3>
+                    <p class="text-gray-400 leading-relaxed">Built for road trips, house parties, beach days, and friend hangs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COPY-PASTE BLOCK -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-3xl">
+            <div class="glass-panel rounded-3xl p-8 md:p-10">
+                <p class="text-sm font-semibold text-purple-300 uppercase tracking-widest mb-4">Copy into the group chat</p>
+                <blockquote class="text-lg md:text-xl text-white leading-relaxed border-l-4 border-purple-400 pl-6 italic">
+                    “We're running Social Jukebox tonight. I'm the DJ — ask me for the 4-digit PIN. Same Wi‑Fi. When your phone asks about Local Network, tap Allow or you won't find the party. Add songs, upvote what you want, downvote what you don't. No aux hogging.”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOFT CTA -->
+    <section class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-2xl text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-bold">We built the app so you don't have to run this on a shared Spotify account.</h2>
+            <p class="text-gray-400 text-lg">Download Social Jukebox, host the session, hand out the PIN. Works with Apple Music and Spotify.</p>
+            <a href="https://apps.apple.com/us/app/social-jukebox/id6758019735"
+               class="inline-flex items-center gap-3 px-6 py-3.5 bg-white text-gray-900 rounded-xl shadow-lg hover:bg-gray-100 transition">
+                <i class="fa-brands fa-apple text-[2.5rem] leading-none flex-shrink-0"></i>
+                <div class="text-left">
+                    <div class="text-[11px] font-medium text-gray-400 leading-none mb-1">Download on the</div>
+                    <div class="text-xl font-bold leading-none">App Store</div>
+                    <div class="text-[10px] text-gray-400 mt-1">iPhone · iPad · Mac</div>
+                </div>
+            </a>
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Works with</span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-gray-200 whitespace-nowrap">
+                    <i class="fa-brands fa-apple text-sm"></i> Apple Music
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-500/15 border border-green-500/40 text-xs font-semibold text-green-300 whitespace-nowrap">
+                    <i class="fa-brands fa-spotify text-sm"></i> Spotify
+                </span>
+            </div>
+            <p class="text-sm text-gray-500 pt-4">
+                Need help? <a href="support.html" class="text-purple-300 hover:text-white transition">Support FAQ</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- CROSS-LINKS -->
+    <section class="py-16 px-6 border-t border-white/10">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">More ways to party</h2>
+            <p class="text-gray-400 mb-10">Same democratic DJ. Different vibes.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <a href="road-trip.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                    <i class="fa-solid fa-car text-purple-400 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Road Trips</h3>
+                    <p class="text-gray-400 text-sm">End aux fights before mile one</p>
+                </a>
+                <a href="house-party.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                    <i class="fa-solid fa-house text-indigo-400 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">House Parties</h3>
+                    <p class="text-gray-400 text-sm">Tonight, nobody hogs the aux</p>
+                </a>
+                <a href="beach.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                    <i class="fa-solid fa-umbrella-beach text-pink-400 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Beach Days</h3>
+                    <p class="text-gray-400 text-sm">No aux fights on the sand</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 px-6 border-t border-white/10 bg-black/20 text-center">
+        <div class="mb-6">
+            <h3 class="font-bold text-2xl mb-6 text-gradient">Social Jukebox</h3>
+            <div class="flex justify-center flex-wrap gap-6 text-sm text-gray-400 mb-6">
+                <a href="support.html" class="hover:text-white transition">Support</a>
+                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
+                <a href="copyright.html" class="hover:text-white transition">Copyright</a>
+            </div>
+            <p class="text-gray-600 text-xs">© 2026 <a href="https://specline.co" class="hover:text-gray-400 transition">SPECLINE TECH LLC</a>. All rights reserved. Patent Pending.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Number the checklist visually
+        document.querySelectorAll('#setup ol > li').forEach((li, i) => {
+            const badge = li.querySelector('span');
+            if (badge) badge.textContent = String(i + 1);
+        });
+    </script>
+
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="u1TrbMQ6iJ5wNoOLcgLCK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
