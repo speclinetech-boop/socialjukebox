@@ -1,0 +1,86 @@
+Social Jukebox — Seed posts (copy/paste)
+Updated: 2026-08-21
+Post these to real communities this week. Link the use-case URL, not the homepage.
+
+────────────────────────────────────────
+1) ROAD TRIP — Reddit / FB travel groups / Discord
+────────────────────────────────────────
+Subject/title: End aux fights on road trips — everyone votes on the playlist
+
+Body:
+Shotgun used to mean “you get the aux.” Now it just means arguments.
+
+Social Jukebox lets one person host Apple Music or Spotify, share a 4-digit PIN, and everyone in the car votes on what plays next. Guests don’t need a music subscription.
+
+https://socialjukebox.app/road-trip
+
+(iPhone / iPad / Mac — free to join, $1.99 one-time to host)
+
+────────────────────────────────────────
+2) HOUSE PARTY — party hosting / college / apartment groups
+────────────────────────────────────────
+Subject/title: Stop hogging the aux at house parties
+
+Body:
+If one person always DJs, half the room is annoyed by song 3.
+
+Social Jukebox is a democratic DJ: host starts a session, guests join with a PIN, upvote/downvote the queue. Works with Apple Music and Spotify. Guests don’t need accounts.
+
+https://socialjukebox.app/house-party
+
+────────────────────────────────────────
+3) BEACH / ORIGIN — lifestyle / music / Aruba nostalgia posts
+────────────────────────────────────────
+Subject/title: We built a group playlist app after a beach day in Aruba
+
+Body:
+Born on a beach in Aruba watching one person struggle to please everyone with the speaker.
+
+Social Jukebox: host the music, hand out a PIN, let the crowd vote. Same Wi‑Fi. Apple Music or Spotify.
+
+https://socialjukebox.app/beach
+
+────────────────────────────────────────
+4) HOST TIP — save this / how-to communities
+────────────────────────────────────────
+Subject/title: Host playbook: run a party without babysitting the aux
+
+Body:
+5-minute checklist for hosting Social Jukebox — including the Local Network “Allow” popup that silently breaks guest joins on iPhone.
+
+https://socialjukebox.app/host-playbook
+
+────────────────────────────────────────
+5) SHORT (X / Instagram / Stories caption)
+────────────────────────────────────────
+Don’t let one person hog the aux.
+Road trips · house parties · beach days.
+Vote on the queue → https://socialjukebox.app/road-trip
+
+────────────────────────────────────────
+ASO NOTES (App Store Connect — do manually)
+────────────────────────────────────────
+Subtitle ideas (≤30 chars):
+- Vote on the playlist
+- Democratic DJ for parties
+
+Keyword field ideas (comma-separated, no spaces after commas in ASC):
+road trip,playlist,party,vote,queue,apple music,spotify,dj,aux,house party,beach,group playlist
+
+Promotional text: mention Apple Music + Spotify + free guest join.
+
+────────────────────────────────────────
+GOOGLE SEARCH CONSOLE (2 min — do once after deploy)
+────────────────────────────────────────
+1. Open https://search.google.com/search-console
+2. Property: socialjukebox.app (add if missing; DNS or HTML meta verify)
+3. Sitemaps → submit: https://socialjukebox.app/sitemap.xml
+4. URL Inspection → request indexing for:
+   /road-trip  /house-party  /beach  /host-playbook
+
+────────────────────────────────────────
+WHAT WE ARE NOT DOING YET
+────────────────────────────────────────
+- Paid ads (Apple Search Ads / Meta) until app_store_click events show which pages convert
+- Grok / extra AI agents for posting — not needed; Chatbase already covers support
+- iOS share-sheet invite loop — lives in the app repo (separate follow-up)

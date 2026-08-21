@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Host Playbook: Run a Party Without Hogging the Aux | Social Jukebox</title>
     <meta name="description" content="The 5-minute Social Jukebox host checklist — setup, PIN, Local Network Allow popup, house rules, and how to stop one person dominating the queue. Save this for your next party.">
-    <link rel="canonical" href="https://socialjukebox.app/host-playbook.html">
+    <link rel="canonical" href="https://socialjukebox.app/host-playbook">
 
     <meta name="apple-itunes-app" content="app-id=6758019735">
     <meta name="theme-color" content="#302b63">
@@ -16,17 +16,22 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://www.chatbase.co">
 
+    <!-- Vercel Analytics & Speed Insights -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
+    <script defer src="/js/analytics.js"></script>
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://socialjukebox.app/host-playbook.html">
+    <meta property="og:url" content="https://socialjukebox.app/host-playbook">
     <meta property="og:title" content="Host Playbook: Run a Party Without Hogging the Aux">
     <meta property="og:description" content="5-minute host checklist + the Local Network Allow popup guests always miss. Save this for your next road trip, house party, or beach day.">
     <meta property="og:image" content="https://socialjukebox.app/images/og-image.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://socialjukebox.app/host-playbook.html">
+    <meta name="twitter:url" content="https://socialjukebox.app/host-playbook">
     <meta name="twitter:title" content="Host Playbook: Run a Party Without Hogging the Aux">
     <meta name="twitter:description" content="5-minute host checklist + the Local Network Allow popup guests always miss. Save this for your next party.">
     <meta name="twitter:image" content="https://socialjukebox.app/images/og-image.png">
@@ -68,12 +73,12 @@
 <body class="app-gradient text-white min-h-screen flex flex-col">
 
     <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center glass-panel sticky top-0 z-50">
-        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+        <a href="/" class="flex items-center gap-3 hover:opacity-80 transition">
             <i class="fa-solid fa-music text-purple-400 text-2xl"></i>
             <span class="font-bold text-xl tracking-tight">Social Jukebox</span>
         </a>
         <div class="flex gap-6">
-            <a href="support.html" class="text-sm font-semibold text-gray-300 hover:text-white transition">Support</a>
+            <a href="/support" class="text-sm font-semibold text-gray-300 hover:text-white transition">Support</a>
         </div>
     </nav>
 
@@ -308,7 +313,7 @@
             <h2 class="text-3xl md:text-4xl font-bold">We built Social Jukebox so you can host the party — not babysit the aux.</h2>
             <p class="text-gray-400 text-lg">Download Social Jukebox, host the session, hand out the PIN. Works with Apple Music and Spotify.</p>
             <a href="https://apps.apple.com/us/app/social-jukebox/id6758019735"
-               class="inline-flex items-center gap-3 px-6 py-3.5 bg-white text-gray-900 rounded-xl shadow-lg hover:bg-gray-100 transition">
+               class="inline-flex items-center gap-3 px-6 py-3.5 bg-white text-gray-900 rounded-xl shadow-lg hover:bg-gray-100 transition" data-track-placement="hero">
                 <i class="fa-brands fa-apple text-[2.5rem] leading-none flex-shrink-0"></i>
                 <div class="text-left">
                     <div class="text-[11px] font-medium text-gray-400 leading-none mb-1">Download on the</div>
@@ -326,7 +331,7 @@
                 </span>
             </div>
             <p class="text-sm text-gray-500 pt-4">
-                Need help? <a href="support.html" class="text-purple-300 hover:text-white transition">Support FAQ</a>
+                Need help? <a href="/support" class="text-purple-300 hover:text-white transition">Support FAQ</a>
             </p>
         </div>
     </section>
@@ -337,17 +342,17 @@
             <h2 class="text-2xl md:text-3xl font-bold mb-3">More ways to party</h2>
             <p class="text-gray-400 mb-10">Same democratic DJ. Different vibes.</p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <a href="road-trip.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                <a href="/road-trip" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
                     <i class="fa-solid fa-car text-purple-400 text-2xl mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Road Trips</h3>
                     <p class="text-gray-400 text-sm">End aux fights before mile one</p>
                 </a>
-                <a href="house-party.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                <a href="/house-party" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
                     <i class="fa-solid fa-house text-indigo-400 text-2xl mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">House Parties</h3>
                     <p class="text-gray-400 text-sm">Tonight, nobody hogs the aux</p>
                 </a>
-                <a href="beach.html" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
+                <a href="/beach" class="p-6 glass-panel rounded-2xl hover:bg-white/10 transition duration-300 block">
                     <i class="fa-solid fa-umbrella-beach text-pink-400 text-2xl mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Beach Days</h3>
                     <p class="text-gray-400 text-sm">No aux fights on the sand</p>
@@ -360,10 +365,10 @@
         <div class="mb-6">
             <h3 class="font-bold text-2xl mb-6 text-gradient">Social Jukebox</h3>
             <div class="flex justify-center flex-wrap gap-6 text-sm text-gray-400 mb-6">
-                <a href="support.html" class="hover:text-white transition">Support</a>
-                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
-                <a href="terms.html" class="hover:text-white transition">Terms of Service</a>
-                <a href="copyright.html" class="hover:text-white transition">Copyright</a>
+                <a href="/support" class="hover:text-white transition">Support</a>
+                <a href="/privacy" class="hover:text-white transition">Privacy Policy</a>
+                <a href="/terms" class="hover:text-white transition">Terms of Service</a>
+                <a href="/copyright" class="hover:text-white transition">Copyright</a>
             </div>
             <p class="text-gray-600 text-xs">© 2026 <a href="https://specline.co" class="hover:text-gray-400 transition">SPECLINE TECH LLC</a>. All rights reserved. Patent Pending.</p>
         </div>

@@ -13,18 +13,19 @@ Marketing site and Spotify OAuth token proxy for [Social Jukebox](https://social
 ```
 socialjukebox/
 ├── index.html              # Landing page
-├── support.html            # FAQ + Chatbase support
-├── privacy.html            # Privacy Policy
-├── terms.html              # Terms of Service
-├── copyright.html          # Copyright / legal summary
+├── road-trip.html          # SEO → /road-trip
+├── house-party.html        # SEO → /house-party
+├── beach.html              # SEO → /beach
+├── host-playbook.html      # SEO → /host-playbook
+├── support.html            # FAQ + Chatbase
+├── privacy.html / terms.html / copyright.html
+├── js/analytics.js         # App Store click → Vercel event
+├── marketing/seed-posts.txt
 ├── robots.txt / sitemap.xml
-├── vercel.json             # Headers + caching
-├── images/                 # Marketing assets
+├── vercel.json             # Clean URLs, headers, caching
+├── images/
 ├── lib/spotifyProxySecurity.js
 ├── api/spotify/
-│   ├── token.js            # Auth code + client-credentials exchange
-│   └── refresh.js          # Refresh-token exchange
-├── .env.example            # Documented Vercel env vars
 └── README.md
 ```
 
@@ -35,8 +36,8 @@ The native iOS / iPadOS / Mac app lives in a separate repo: `speclinetech-boop/s
 - **Hosting:** Vercel
 - **DNS / edge:** Cloudflare
 - **Site:** Static HTML + Tailwind CSS (CDN)
-- **Analytics:** Vercel Analytics & Speed Insights
-- **Support widget:** Chatbase
+- **Analytics:** Vercel Analytics & Speed Insights (`app_store_click` via `js/analytics.js`)
+- **Support widget:** Chatbase (no extra bots needed for acquisition)
 - **API:** Vercel Serverless Functions (`api/spotify/*`)
 
 ## Spotify token proxy

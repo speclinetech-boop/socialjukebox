@@ -1,6 +1,25 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/road-trip", "destination": "/road-trip.html" },
+    { "source": "/house-party", "destination": "/house-party.html" },
+    { "source": "/beach", "destination": "/beach.html" },
+    { "source": "/host-playbook", "destination": "/host-playbook.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/copyright", "destination": "/copyright.html" }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/road-trip.html", "destination": "/road-trip", "permanent": true },
+    { "source": "/house-party.html", "destination": "/house-party", "permanent": true },
+    { "source": "/beach.html", "destination": "/beach", "permanent": true },
+    { "source": "/host-playbook.html", "destination": "/host-playbook", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/copyright.html", "destination": "/copyright", "permanent": true }
   ],
   "headers": [
     {
@@ -22,6 +41,12 @@
       "source": "/images/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
       ]
     },
     {
