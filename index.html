@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Jukebox - The Democratic DJ</title>
-    <meta name="description" content="Control the music together. Vote on songs, react with hype emojis, and party anywhere with Social Jukebox. Works with Apple Music and Spotify.">
+    <meta name="description" content="Control the music together. Guests join free with a PIN. Host with DJ Pro for $1.99 once. No subscription. Works with Apple Music and Spotify.">
     
     <!-- APP STORE CONFIG -->
     <meta name="apple-itunes-app" content="app-id=6758019735">
@@ -29,14 +29,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://socialjukebox.app">
     <meta property="og:title" content="Social Jukebox - The Democratic DJ">
-    <meta property="og:description" content="Control the music together. Vote on songs and let the best music win. Works with Apple Music and Spotify. Perfect for road trips, house parties, and beach days.">
+    <meta property="og:description" content="Guests join free with a PIN. Host with DJ Pro for $1.99 once. No subscription. Vote on songs and let the best music win. Works with Apple Music and Spotify.">
     <meta property="og:image" content="https://socialjukebox.app/images/og-image.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://socialjukebox.app">
     <meta name="twitter:title" content="Social Jukebox - The Democratic DJ">
-    <meta name="twitter:description" content="Control the music together. Vote on songs and let the best music win. Works with Apple Music and Spotify. Perfect for road trips, house parties, and beach days.">
+    <meta name="twitter:description" content="Guests join free with a PIN. Host with DJ Pro for $1.99 once. No subscription. Works with Apple Music and Spotify.">
     <meta name="twitter:image" content="https://socialjukebox.app/images/og-image.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -143,6 +143,9 @@
                         Learn More
                     </a>
                 </div>
+                <p class="text-sm md:text-base text-gray-400 max-w-2xl mx-auto md:mx-0">
+                    Guests join free with a PIN. Host with <span class="text-white font-semibold">DJ Pro</span> for <span class="text-white font-semibold">$1.99 once</span>. No subscription.
+                </p>
                 <div class="flex flex-wrap items-center gap-3 pt-2">
                     <span class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Works with</span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-gray-200 whitespace-nowrap">
@@ -201,6 +204,29 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3">Phone in the car. Mac at the party.</h3>
                     <p class="text-gray-400 leading-relaxed">Host from your iPhone on the road, or park a Mac by the speakers for the living-room dashboard. Same app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-16 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-10">
+                <p class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">Pricing</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Free for guests. $1.99 once to host.</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">No ads. No subscription. Unlock DJ Pro once and host every party after that.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-panel rounded-2xl p-8 flex flex-col gap-3">
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest">Guest</p>
+                    <h3 class="text-2xl font-bold">Free</h3>
+                    <p class="text-gray-400 leading-relaxed">Join with a PIN. Vote, add songs, and let the best track win. Guests never pay.</p>
+                </div>
+                <div class="glass-panel rounded-2xl p-8 flex flex-col gap-3 border border-purple-400/30">
+                    <p class="text-xs font-semibold text-purple-300 uppercase tracking-widest">DJ Pro</p>
+                    <h3 class="text-2xl font-bold">$1.99 once</h3>
+                    <p class="text-gray-400 leading-relaxed">Host the party from iPhone, iPad, or Mac. One-time unlock. No subscription.</p>
                 </div>
             </div>
         </div>
@@ -376,7 +402,17 @@
 
     <footer class="py-10 px-6 border-t border-white/10 bg-black/20 text-center">
         <div class="mb-6">
-            <h3 class="font-bold text-2xl mb-6 text-gradient">Social Jukebox</h3>
+            <h3 class="font-bold text-2xl mb-3 text-gradient">Social Jukebox</h3>
+            <p class="text-sm text-gray-400 mb-6">Guests join free. Host with DJ Pro for $1.99 once. No subscription.</p>
+            <a href="https://apps.apple.com/us/app/social-jukebox/id6758019735"
+               class="inline-flex items-center gap-3 px-6 py-3.5 bg-white text-gray-900 rounded-xl shadow-lg hover:bg-gray-100 transition mb-8" data-track-placement="footer">
+                <i class="fa-brands fa-apple text-[2.5rem] leading-none flex-shrink-0"></i>
+                <div class="text-left">
+                    <div class="text-[11px] font-medium text-gray-400 leading-none mb-1">Download on the</div>
+                    <div class="text-xl font-bold leading-none">App Store</div>
+                    <div class="text-[10px] text-gray-400 mt-1">iPhone · iPad · Mac</div>
+                </div>
+            </a>
             <div class="flex justify-center flex-wrap gap-6 text-sm text-gray-400 mb-6">
                 <a href="/support" class="hover:text-white transition">Support</a>
                 <a href="/privacy" class="hover:text-white transition">Privacy Policy</a>
