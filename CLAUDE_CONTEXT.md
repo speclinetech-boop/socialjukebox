@@ -1,6 +1,6 @@
 # CLAUDE_CONTEXT.md
 # Shared Context for Claude Assistants
-# Last Updated: July 21, 2026
+# Last Updated: September 7, 2026
 
 This document helps keep Desktop Claude (claude.ai) and Xcode Claude in sync. Update this file when making decisions that affect both website and app development.
 
@@ -96,7 +96,7 @@ The app runs on:
 - **DJ Pro** ($1.99 in-app purchase): unlocks hosting
 - **Guest mode**: free, join via 4-digit PIN
 - **Democratic voting**: upvote/downvote songs
-- **VIP Super Votes**: boost songs to top
+- **Super Votes**: 3 free per party; $0.99 pack of 5 extra (no DJ Pro required). Unused purchased votes stay on the phone
 - **Background audio**: music keeps playing when app backgrounded
 - **Session persistence**: can resume interrupted DJ sessions
 - **Multipeer Connectivity**: works without internet, just WiFi
@@ -106,9 +106,9 @@ The app runs on:
 
 ## CURRENT APP VERSION
 
-- **App Store:** 3.0 (submitted, pending review)
-- **TestFlight:** 3.0
-- **Xcode project:** 3.0
+- **App Store:** 3.0.2 (live)
+- **TestFlight:** 3.0.2
+- **Xcode project:** 3.0.2
 
 ---
 
