@@ -1,5 +1,5 @@
 Social Jukebox. Support Knowledge Base
-Version 3.0 | August 2026 | For AI Support Bot Use
+Version 3.0.2 | August 2026 | For AI Support Bot Use
 
 What is Social Jukebox?
 
@@ -10,6 +10,9 @@ Social Jukebox is a democratic DJ app for iPhone, iPad, and Mac. One person acts
 • No accounts needed to join. Just a name and a 4-digit PIN
 • Available for iPhone, iPad, and Mac (Apple Silicon)
 • Android is not yet supported
+
+What's New in Version 3.0.2
+• Super Vote packs: everyone still gets 3 free Super Votes every party. $0.99 buys 5 more. Unused purchased votes stay on your phone. The 3 free ones reset every party. No DJ Pro required to buy a pack.
 
 What's New in Version 3.0
 • See who's here: live guest list by name so the DJ knows who showed up to vote
@@ -218,5 +221,5 @@ Contact & Support
 • Email: support@socialjukebox.app
 • AI assistant: Available 24/7 on the support page
 
-Made by SPECLINE TECH LLC | Current App Version: 3.0 (August 2026) | Supported Devices: iPhone, iPad, Mac (Apple Silicon) | Minimum iOS: 17.0
+Made by SPECLINE TECH LLC | Current App Version: 3.0.2 (August 2026) | Supported Devices: iPhone, iPad, Mac (Apple Silicon) | Minimum iOS: 17.0
 Patent Pending. © 2026 Specline Tech LLC. All rights reserved.
